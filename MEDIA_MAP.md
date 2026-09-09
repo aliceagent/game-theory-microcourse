@@ -38,8 +38,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-05-poster.webp` | Frame extract from approved lesson-05.mp4 | Lesson 5 poster | `approved` | `55b4a887b4e70fbadd2e3022cf032480c3f3040cb15226dab1e41ac790ada0c9` |
 | `public/media/lesson-06.mp4` | Lesson 6 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768 redo after 1024 rejected; plaque QA pass max_w 1089 | Correlation is not causation lecture film | `approved` | `249612737e8e40fb98dadc2674d16f103db4b12b76166ba64ce6979b6756799f` |
 | `public/media/lesson-06-poster.webp` | Frame extract from approved lesson-06.mp4 | Lesson 6 poster | `approved` | `05fb9e037e9befeac8166c92e6d0bde897cca3e0a546430d79382e951ffb0be7` |
-| `public/media/lesson-07.mp4` | Lesson 7 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768 redo after 1024/clipped-plaque reject; plaque QA pass max_w 1180 | Success as a cause of traits lecture film | `approved-pipeline` | `f17b26ff05b46048c1e8ec56858fb9314d2ceaef9fb11b70221c65e8b434b516` |
-| `public/media/lesson-07-poster.webp` | Frame extract from lesson-07.mp4 | Lesson 7 poster | `approved-pipeline` | `b0e7b1bb3be33a5e5376b970e30fd0908197d0a0ff823014d5222d54518cd8fa` |
+| `public/media/lesson-07.mp4` | Lesson 7 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768 redo after 1024/clipped-plaque reject; plaque QA pass max_w 1180 | Success as a cause of traits lecture film | `approved` | `f17b26ff05b46048c1e8ec56858fb9314d2ceaef9fb11b70221c65e8b434b516` |
+| `public/media/lesson-07-poster.webp` | Frame extract from approved lesson-07.mp4 | Lesson 7 poster | `approved` | `b0e7b1bb3be33a5e5376b970e30fd0908197d0a0ff823014d5222d54518cd8fa` |
 
 ## Not yet present
 

@@ -34,6 +34,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-03-poster.webp` | Frame extract from lesson-03.mp4 | Lesson 3 poster | `approved` | `bb050d5bdbb9205a4bd54c6659c85e27786c00d58fda9660e96fca792095a347` |
 | `public/media/lesson-04.mp4` | Lesson 4 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Deliberate practice and self-assessment lecture film | `approved` | `97fc453ea47127529b3a1eb8083cc22e985e248f5349345a0d3c4bd9ec326941` |
 | `public/media/lesson-04-poster.webp` | Frame extract from lesson-04.mp4 | Lesson 4 poster | `approved` | `96a174de8732bf74b1a7f51a6fb63a687c807705598632b9626bb98d88cd1ca6` |
+| `public/media/lesson-05.mp4` | Lesson 5 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1024×576 | Misjudging your own performance lecture film | `approved-pipeline` | `258df9c73cff811632c0b7d21d738d9313f29f3fb6b9e6670538726691f4d01d` |
+| `public/media/lesson-05-poster.webp` | Frame extract from lesson-05.mp4 | Lesson 5 poster | `approved-pipeline` | `5b6e99757e2064fc5d24792e9a867001edb794c59f3b978ca64c1156fee826b2` |
 
 ## Not yet present
 

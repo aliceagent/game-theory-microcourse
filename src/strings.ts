@@ -36,7 +36,9 @@ export const strings = {
     heading: 'Source lecture',
     body: 'shared by @Dhruvkumar16797 on X · ~53 min',
     linkLabel: 'Watch the original on X',
-    note: 'The original video is not re-hosted here. This course only reconstructs and teaches it.',
+    playlistLabel: 'Watch the papercraft films on YouTube',
+    playlistUrl: 'https://www.youtube.com/playlist?list=PLR-9qisXHS88',
+    note: 'The original video is not re-hosted here. This course only reconstructs and teaches it. Approved papercraft films are also on YouTube.',
   },
 
   home: {

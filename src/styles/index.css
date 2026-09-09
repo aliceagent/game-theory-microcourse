@@ -490,6 +490,13 @@ a:hover {
   color: var(--text-secondary);
 }
 
+.source-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
 /* ---------- video stage ---------- */
 
 .video-stage {

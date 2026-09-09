@@ -32,6 +32,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-02-poster.webp` | Frame extract from lesson-02.mp4 | Lesson 2 poster | `approved` | `42719cc31f3a999acd8d834f0963b32c6876dba76243352b6a8e0b2bcf6d166d` |
 | `public/media/lesson-03.mp4` | Lesson 3 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Growth mindset and resilience lecture film | `approved` | `ff7b7349c874092866e7649112c68371463b8f4b850181b520a308f7e5e42adc` |
 | `public/media/lesson-03-poster.webp` | Frame extract from lesson-03.mp4 | Lesson 3 poster | `approved` | `bb050d5bdbb9205a4bd54c6659c85e27786c00d58fda9660e96fca792095a347` |
+| `public/media/lesson-04.mp4` | Lesson 4 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Deliberate practice and self-assessment lecture film | `approved` | `97fc453ea47127529b3a1eb8083cc22e985e248f5349345a0d3c4bd9ec326941` |
+| `public/media/lesson-04-poster.webp` | Frame extract from lesson-04.mp4 | Lesson 4 poster | `approved` | `96a174de8732bf74b1a7f51a6fb63a687c807705598632b9626bb98d88cd1ca6` |
 
 ## Not yet present
 

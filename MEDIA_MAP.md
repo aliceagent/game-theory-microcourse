@@ -44,6 +44,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-08-poster.webp` | Frame extract from lesson-08.mp4 | Lesson 8 poster | `approved` | `059af8f4dff64e88aa79ea4918fe141441c1fbe882d58a10c467d89c13c5aa06` |
 | `public/media/lesson-09.mp4` | Lesson 9 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; title wrapped onto plate after overflow reject | Parenting difference two: explanation or command lecture film | `approved` | `2a24c476d33daf78e049e36fa509d6c0b3e1b6312c2fd9e08216c2a0d0ff7e54` |
 | `public/media/lesson-09-poster.webp` | Frame extract from approved lesson-09.mp4 | Lesson 9 poster | `approved` | `f496b7736406f69d219997e0b79dfd9bed76706bc2fdf61ff5a19b4da24a762b` |
+| `public/media/lesson-10.mp4` | Lesson 10 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1028 | Feeling safe and meeting authority at school lecture film | `approved` | `35d8c692f59eab519468bb4f79215cd3a69a5f518b382afe0f15842cd75cb17b` |
+| `public/media/lesson-10-poster.webp` | Frame extract from approved lesson-10.mp4 | Lesson 10 poster | `approved` | `21dc85b0ba21f93bfab48d4049e5b8f41a2eb6099f81749626336795660a4c55` |
 
 ## Not yet present
 

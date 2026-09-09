@@ -33,7 +33,7 @@ These are locked by Jonathan as of the Lesson 1 v3 pass. They are not suggestion
 8. **Papercraft style constants:** cream `#F6F1E8` base, slate/teal accents, visible paper fibers, fold shadows. No CGI gloss. **No generated text in pixels** — all lettering (titles, labels, subtitles) is deterministic type rendered in Pillow, never asked of the image model.
 9. **Subtitles:** one large papercraft plaque line at a time, speech-aligned via Whisper word timestamps. Never a tiny paragraph dump, never default unstyled captions.
 10. **Title:** a stylistic papercraft style-card with deterministic type, shown exactly once at the top of the lesson. A monotonic, unique zoom over it is fine (no plateau, no freeze-loop).
-11. **Jazz BGM is added only to FINAL assembled lesson MP4s**, sidechain-ducked quieter than the voice. Intermediate artifacts stay music-free.
+11. **Jazz BGM is added only to FINAL assembled lesson MP4s**, using the **LOCKED mix in §2.4** (`ops/jazz-mix.json`). Intermediate artifacts stay music-free. Do not re-tune volume.
 
 ### 1.5 Cost and tooling
 12. **First frames:** xAI `grok-imagine-image`, $0.02/image. **Motion:** local MiniMax H3 only. The **xAI video API is prohibited.** **Hard series spend cap: $5.**
@@ -45,7 +45,7 @@ These are locked by Jonathan as of the Lesson 1 v3 pass. They are not suggestion
 16. **Vercel:** the *first* deploy of a project is production even without `--prod`; subsequent deploys are previews unless `--prod` is passed. Lesson media updates go out as **preview** deploys.
 
 ### 1.7 Assembly
-17. Assemble with the ffmpeg **concat demuxer** over full unique shots. **Strip native H3 audio** from every shot. Mux the approved Eve voice + ducked jazz at final assembly only.
+17. Assemble with the ffmpeg **concat demuxer** over full unique shots. **Strip native H3 audio** from every shot. Mux the approved Eve voice + **§2.4 locked jazz mix** at final assembly only.
 
 ---
 
@@ -68,9 +68,32 @@ Everything in this section was measured on the passed Lesson 1 v3 run. Use it as
 - One line at a time, speech-aligned to Whisper words.
 - Rendered deterministically: **large cream strip, teal tab, DejaVu Bold 54**, visible-ink centered. (This is the "papercraft plaque" style; it replaced rejected ASS captions — see Pitfalls.)
 
-### 2.4 Music
-- Track: `/home/nvidia/generated/paper-cut-video-instructional-site/public/media/happy-jazz-sample.mp3`
-- Sidechain-ducked under the Eve voice. Native H3 audio stripped before mux.
+### 2.4 Music — LOCKED mix (Jonathan 2026-09-09: “this is a good volume”)
+
+Reference file: `ops/out/lesson-01/lesson-01-review-v3-jazz.mp4`  
+Machine copy: `ops/jazz-mix.json` — assemblers must read these numbers, not invent new ones.
+
+- Track: `/home/nvidia/generated/paper-cut-video-instructional-site/public/media/happy-jazz-sample.mp3` (audio loop of this file is allowed).
+- Jazz plays from **t=0** (title card is not silent).
+- Native H3 audio stripped before mux.
+
+**Exact ffmpeg (do not drift):**
+
+```
+jazz volume=0.22
+voice volume=1.0
+title jazz = same 0.22 bed (no extra gain)
+sidechaincompress threshold=0.05 ratio=7 attack=15 release=380
+amix weights=1 0.5
+alimiter limit=0.95
+loudnorm I=-16 TP=-1.5 LRA=11 **two-pass linear=true**
+```
+
+**Measured on the lock:** integrated **−16.0 LUFS**; speech RMS ~4× title jazz (~12 dB under the voice).
+
+**Forbidden:**
+- `volume=0.16` + heavy duck + silent title + file at **−28 LUFS** — inaudible on a phone.
+- `volume=0.45–0.75` or **single-pass/dynamic loudnorm** — jazz matches the voice (title RMS ≈ speech RMS). Dynamic loudnorm boosts the 4 s title bed to program loudness; always use **measured two-pass `linear=true`**.
 
 ### 2.5 Stills
 - xAI `grok-imagine-image` at $0.02 each; prompts specify **no baked-in text**.
@@ -111,10 +134,11 @@ Execute this end-to-end per lesson N. **Do not wait for per-lesson approval** (w
 3. **Beat plan.** Divide the voice duration into 5.167 s beats; the shot count is `ceil(voice / 5.167)` so unique picture ≥ narration. (Lesson 1: 86.538 s → 17 shots = 87.839 s of picture, tail-trimmed.)
 4. **Stills.** Generate ~3 **new, unused** xAI stills per lesson at chapter cut points (plus title style-card treatment). Verify each first-frame SHA-256 has never seeded an I2V. Deterministic Pillow type for all lettering.
 5. **Motion.** For each chapter: seed the first shot from the fresh still, then chain — extract last frame → new image → next I2V. `--quality extra-fast`, 1344x768, shots ≤ 7 s (default 5.167 s), `--lock-wait` respected, one heavy at a time.
-6. **Assemble.** Concat demuxer over **full** unique shots (no per-shot frame drops — see seam pitfall), strip native H3 audio, prepend the title card (once, monotonic zoom OK), burn plaques, tail-trim picture to voice, mux Eve + sidechain-ducked jazz.
+6. **Assemble.** Concat demuxer over **full** unique shots (no per-shot frame drops — see seam pitfall), strip native H3 audio, prepend the title card (once, monotonic zoom OK), burn plaques, tail-trim picture to voice, mux Eve + **locked jazz mix §2.4**.
 7. **QA (automated).** Check: total duration = title + voice (±1 frame); `freezedetect` finds no held frames; no `-stream_loop` anywhere in the assembly command history; picture-vs-voice reconciliation followed §1.1 rule 3.
 8. **Publish.** Copy the final MP4 to `public/media/`; deploy as a **preview** (not `--prod`).
-9. Move to lesson N+1.
+9. **YouTube (only after Jonathan approves that lesson’s film).** Upload to channel **Jonathan Caras** `@jonathancaras` `UCIH9lesjd48E6GPkzXmOV4g` using `YOUTUBE_TOKEN_PATH=/home/nvidia/.hermes/youtube_token_jonathan_caras_channel.json` and `/home/nvidia/youtube-publisher/youtube_upload.py`. Category 27, language `en`, not made for kids. Full description: title, objective, micro-points, chapters, course URL, playlist URL. Playlist **The Marshmallow Experiment** `PLR-9qisXHS88` (create once, then add idempotently). Public only with `--confirm-public` after that lesson is approved. Persist a secret-free receipt. Do not upload unapproved lessons.
+10. Move to lesson N+1.
 
 ### Overnight conveyor behavior
 - Cron worker every 12 min (`3b8548510eb6`) resumes the pipeline; stall watchdog restarts hung shots.
@@ -147,6 +171,7 @@ Each of these cost real time on Lesson 1. Do not rediscover them.
 10. **Whisper mishears** (e.g., "Aussie"/"easy", "Michel"/"Mischel"). Plaques must sync to the TTS **audio as spoken**, not the idealized transcript, when the two disagree — alignment beats orthography.
 11. **Cron double-spend.** A tick arriving while the GPU is busy must exit silently without triggering new xAI image calls.
 12. **Vercel deploy semantics.** The first deploy of a project is production even without `--prod`. Already true for this project — all subsequent lesson deploys are previews unless `--prod` is passed, which is the desired behavior.
+13. **Jazz too quiet / too loud.** `volume=0.16` and a −28 LUFS file is inaudible. `volume=0.45+` or dynamic loudnorm makes jazz compete with Eve. Locked mix is §2.4 / `ops/jazz-mix.json` only.
 
 ---
 
@@ -162,7 +187,7 @@ Each of these cost real time on Lesson 1. Do not rediscover them.
 | Voice | xAI Eve, blocks → concat `voice.wav` |
 | Alignment | Whisper `small`, word timestamps |
 | Subs | Papercraft plaque: cream strip, teal tab, DejaVu Bold 54 |
-| Music | `happy-jazz-sample.mp3`, sidechain-ducked, finals only |
+| Music | `happy-jazz-sample.mp3` volume **0.22**, duck ratio **7**, amix **1 0.5**, two-pass loudnorm **−16 LUFS linear**; title not silent; finals only. See `ops/jazz-mix.json` |
 | Stills | xAI `grok-imagine-image` $0.02, no baked text, one-still-one-video |
 | Spend cap | $5 series total (at ~$0.26 as of 2026-09-09) |
 | Assembly | concat demuxer, strip H3 audio, tail-trim picture, pad audio silence |

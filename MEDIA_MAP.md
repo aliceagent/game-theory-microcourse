@@ -26,8 +26,10 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | File | Source authority | Teaching purpose | Approval state | sha256 |
 | --- | --- | --- | --- | --- |
 | `public/media/placeholder-poster.svg` | Deterministic paper-craft SVG authored in this repo (sprint 1) | Stands in for the lesson film on every lesson that has no MP4 yet, under the honest "Video in production" label | `deterministic` | `3fcd1236b014009c2e9c75980ecdb94c847530b1298ad3b5171b952d1bd5516c` |
-| `public/media/lesson-01.mp4` | Lesson 1 v3 unique H3 chain + Eve + plaques; Jonathan 2026-09-09 pass | Marshmallow-test lecture film | `approved` | `f50ad922edaf808ee7d9fbddab6ba392c53b1bed7ed7919ccbd0b919f0e105dc` |
+| `public/media/lesson-01.mp4` | Lesson 1 v3 unique H3 chain + Eve + locked jazz mix; Jonathan 2026-09-09 picture pass + jazz volume lock | Marshmallow-test lecture film | `approved` | `5033278752930901606ed4d35ab039e1b6b7ccd2e58cb2f82b8b00d47cb0e9d0` |
 | `public/media/lesson-01-poster.webp` | Frame extract from approved lesson-01.mp4 | Lesson 1 poster | `approved` | `bb31a0599b9a09f6418b96f2f3c405179a023419a77b6920f6176dbcb5c481c8` |
+| `public/media/lesson-02.mp4` | Lesson 2 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Delayed gratification and self-control lecture film | `approved-pipeline` | `75ae84a3bbded9152ee89dd7cf2473b1cac9f6bb8847711e4a143abebd3522ca` |
+| `public/media/lesson-02-poster.webp` | Frame extract from lesson-02.mp4 | Lesson 2 poster | `approved-pipeline` | `42719cc31f3a999acd8d834f0963b32c6876dba76243352b6a8e0b2bcf6d166d` |
 
 ## Not yet present
 

@@ -40,6 +40,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-06-poster.webp` | Frame extract from approved lesson-06.mp4 | Lesson 6 poster | `approved` | `05fb9e037e9befeac8166c92e6d0bde897cca3e0a546430d79382e951ffb0be7` |
 | `public/media/lesson-07.mp4` | Lesson 7 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768 redo after 1024/clipped-plaque reject; plaque QA pass max_w 1180 | Success as a cause of traits lecture film | `approved` | `f17b26ff05b46048c1e8ec56858fb9314d2ceaef9fb11b70221c65e8b434b516` |
 | `public/media/lesson-07-poster.webp` | Frame extract from approved lesson-07.mp4 | Lesson 7 poster | `approved` | `b0e7b1bb3be33a5e5376b970e30fd0908197d0a0ff823014d5222d54518cd8fa` |
+| `public/media/lesson-08.mp4` | Lesson 8 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; plaque QA pass max_w 1075 | Parenting difference one: communication lecture film | `approved` | `730b33964dd608e842a67bcf1731d526bb5a8db23c1b60233b3077f617fc9c77` |
+| `public/media/lesson-08-poster.webp` | Frame extract from lesson-08.mp4 | Lesson 8 poster | `approved` | `059af8f4dff64e88aa79ea4918fe141441c1fbe882d58a10c467d89c13c5aa06` |
 
 ## Not yet present
 

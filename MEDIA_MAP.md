@@ -30,6 +30,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-01-poster.webp` | Frame extract from approved lesson-01.mp4 | Lesson 1 poster | `approved` | `bb31a0599b9a09f6418b96f2f3c405179a023419a77b6920f6176dbcb5c481c8` |
 | `public/media/lesson-02.mp4` | Lesson 2 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Delayed gratification and self-control lecture film | `approved` | `75ae84a3bbded9152ee89dd7cf2473b1cac9f6bb8847711e4a143abebd3522ca` |
 | `public/media/lesson-02-poster.webp` | Frame extract from lesson-02.mp4 | Lesson 2 poster | `approved` | `42719cc31f3a999acd8d834f0963b32c6876dba76243352b6a8e0b2bcf6d166d` |
+| `public/media/lesson-03.mp4` | Lesson 3 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4 | Growth mindset and resilience lecture film | `approved-pipeline` | `ff7b7349c874092866e7649112c68371463b8f4b850181b520a308f7e5e42adc` |
+| `public/media/lesson-03-poster.webp` | Frame extract from lesson-03.mp4 | Lesson 3 poster | `approved-pipeline` | `bb050d5bdbb9205a4bd54c6659c85e27786c00d58fda9660e96fca792095a347` |
 
 ## Not yet present
 

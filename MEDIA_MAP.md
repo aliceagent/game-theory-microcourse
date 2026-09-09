@@ -16,10 +16,9 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 5. **Approval state.** One of:
    - `deterministic` — produced by code in this repo, reproducible byte-for-byte, no human approval needed.
    - `provisional` — generated, hashed, and in the tree, but not yet approved for the shipped course.
-   - `approved` — explicitly approved (lesson 1 gate, decision 6b).
+   - `approved` — explicitly approved (lesson 1 gate).
    - `approved-pipeline` — produced by the pipeline that was approved at the lesson-1 gate.
-6. **No paid image spend.** All stills, posters and share cards are produced locally at $0 (plan §2.1). The
-   $0.02-per-image cap is satisfied by never buying an image, not by shopping carefully.
+6. **Paid stills are capped, not forbidden.** I2V first frames are xAI `grok-imagine-image` at $0.02 each. Hard series cap **$5**. xAI video API is prohibited. Posters may be extracted from the approved film at $0.
 7. **The original lecture video is never re-hosted** (decision 13b). No row here may point at a copy of it.
 
 ## Assets
@@ -27,6 +26,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | File | Source authority | Teaching purpose | Approval state | sha256 |
 | --- | --- | --- | --- | --- |
 | `public/media/placeholder-poster.svg` | Deterministic paper-craft SVG authored in this repo (sprint 1) | Stands in for the lesson film on every lesson that has no MP4 yet, under the honest "Video in production" label | `deterministic` | `3fcd1236b014009c2e9c75980ecdb94c847530b1298ad3b5171b952d1bd5516c` |
+| `public/media/lesson-01.mp4` | Lesson 1 v3 unique H3 chain + Eve + plaques; Jonathan 2026-09-09 pass | Marshmallow-test lecture film | `approved` | `f50ad922edaf808ee7d9fbddab6ba392c53b1bed7ed7919ccbd0b919f0e105dc` |
+| `public/media/lesson-01-poster.webp` | Frame extract from approved lesson-01.mp4 | Lesson 1 poster | `approved` | `bb31a0599b9a09f6418b96f2f3c405179a023419a77b6920f6176dbcb5c481c8` |
 
 ## Not yet present
 

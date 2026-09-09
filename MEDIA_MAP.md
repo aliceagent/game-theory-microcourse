@@ -46,6 +46,10 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-09-poster.webp` | Frame extract from approved lesson-09.mp4 | Lesson 9 poster | `approved` | `f496b7736406f69d219997e0b79dfd9bed76706bc2fdf61ff5a19b4da24a762b` |
 | `public/media/lesson-10.mp4` | Lesson 10 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1028 | Feeling safe and meeting authority at school lecture film | `approved` | `35d8c692f59eab519468bb4f79215cd3a69a5f518b382afe0f15842cd75cb17b` |
 | `public/media/lesson-10-poster.webp` | Frame extract from approved lesson-10.mp4 | Lesson 10 poster | `approved` | `21dc85b0ba21f93bfab48d4049e5b8f41a2eb6099f81749626336795660a4c55` |
+| `public/media/lesson-11.mp4` | Lesson 11 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1078 | Parenting difference three: stability and promises lecture film | `approved` | `81a70323de0fc985105a3c79d7c9f3def1ca8ddfff02ccec3ccf78be634513fa` |
+| `public/media/lesson-11-poster.webp` | Frame extract from approved lesson-11.mp4 | Lesson 11 poster | `approved` | `ff30abaf9eadb5057652afc9d1326aed33c77e873eb799f4a98d29c4af197091` |
+| `public/media/lesson-12.mp4` | Lesson 12 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1179 | Reinterpreting the marshmallow test as trust lecture film | `approved` | `ad4310f63031d462b0305adb624c08837d1946d30ef2cca81ecaaf3afb36add9` |
+| `public/media/lesson-12-poster.webp` | Frame extract from approved lesson-12.mp4 | Lesson 12 poster | `approved` | `ca09986d3465c7e8a01497cad04923a7ba283dc1355eea22909ac11dd4458ab1` |
 
 ## Not yet present
 

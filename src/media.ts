@@ -3,7 +3,7 @@
 // 6–7 add ids here as `public/media/lesson-NN.mp4` lands, and MEDIA_MAP.md is
 // the hash-bound record of what actually exists.
 
-const LESSONS_WITH_VIDEO = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21])
+const LESSONS_WITH_VIDEO = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])
 
 export function hasVideo(lessonId: number): boolean {
   return LESSONS_WITH_VIDEO.has(lessonId)

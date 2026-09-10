@@ -50,6 +50,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-11-poster.webp` | Frame extract from approved lesson-11.mp4 | Lesson 11 poster | `approved` | `ff30abaf9eadb5057652afc9d1326aed33c77e873eb799f4a98d29c4af197091` |
 | `public/media/lesson-12.mp4` | Lesson 12 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1179 | Reinterpreting the marshmallow test as trust lecture film | `approved` | `ad4310f63031d462b0305adb624c08837d1946d30ef2cca81ecaaf3afb36add9` |
 | `public/media/lesson-12-poster.webp` | Frame extract from approved lesson-12.mp4 | Lesson 12 poster | `approved` | `ca09986d3465c7e8a01497cad04923a7ba283dc1355eea22909ac11dd4458ab1` |
+| `public/media/lesson-13.mp4` | Lesson 13 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1129 | Rational adaptation and resilience lecture film | `approved` | `92ed4ababdc53f5de7a6ac9c92740f6552a5ca233ae53f5d30be6b1821039389` |
+| `public/media/lesson-13-poster.webp` | Frame extract from approved lesson-13.mp4 | Lesson 13 poster | `approved` | `8be85fd69ddfb98aaa9627b9181117c3816d01e14d72d904cbd613f50d62b5de` |
 
 ## Not yet present
 

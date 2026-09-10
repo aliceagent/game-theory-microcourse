@@ -52,6 +52,18 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-12-poster.webp` | Frame extract from approved lesson-12.mp4 | Lesson 12 poster | `approved` | `ca09986d3465c7e8a01497cad04923a7ba283dc1355eea22909ac11dd4458ab1` |
 | `public/media/lesson-13.mp4` | Lesson 13 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1129 | Rational adaptation and resilience lecture film | `approved` | `92ed4ababdc53f5de7a6ac9c92740f6552a5ca233ae53f5d30be6b1821039389` |
 | `public/media/lesson-13-poster.webp` | Frame extract from approved lesson-13.mp4 | Lesson 13 poster | `approved` | `8be85fd69ddfb98aaa9627b9181117c3816d01e14d72d904cbd613f50d62b5de` |
+| `public/media/lesson-14.mp4` | Lesson 14 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1108 | Stress, self-reflection and a school response lecture film | `approved` | `a48c081ed09a14375099fdf287ba8d139848195bbe9cb053dd162498ee7cbf14` |
+| `public/media/lesson-14-poster.webp` | Frame extract from approved lesson-14.mp4 | Lesson 14 poster | `approved` | `0d3017a945fc73b1cd688911c621eb698e18f62df4cd509f760fc7be6cc89eab` |
+| `public/media/lesson-15.mp4` | Lesson 15 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1125 | Why the lecturer turns to social hierarchy lecture film | `approved` | `77f00ae7dcb8de530528003929c03b0d363b027b527ed4bac2dec41a34a885bb` |
+| `public/media/lesson-15-poster.webp` | Frame extract from approved lesson-15.mp4 | Lesson 15 poster | `approved` | `e23fb3d4e877fed7d5655f663ebf0997f92eb7365065d91a0aa9d3ac4b757277` |
+| `public/media/lesson-16.mp4` | Lesson 16 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1058 | Different positions, different strategies lecture film | `approved` | `ab1eb707c9af4a1303e1f6a5297b9e1dbc86d369c48aa903532cc7bcb097e8a2` |
+| `public/media/lesson-16-poster.webp` | Frame extract from approved lesson-16.mp4 | Lesson 16 poster | `approved` | `d20dc44b22d0957f04fb93b8ba4ac555aa40f41ac2d7362b059fce717468e091` |
+| `public/media/lesson-17.mp4` | Lesson 17 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1099 | Parenting incentives beyond the child lecture film | `approved` | `d21d9c9b6855ec9c7847580fecbfdd4cc86ee4ce24fe6d999c7bda5afe613532` |
+| `public/media/lesson-17-poster.webp` | Frame extract from approved lesson-17.mp4 | Lesson 17 poster | `approved` | `e077cafdf88d018a149083969bc03e73e34c0864d207128c9153926a18220c86` |
+| `public/media/lesson-18.mp4` | Lesson 18 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1009 | Workplace obedience and family imitation lecture film | `approved` | `3d081401bbbdc95e0922f5f8ecf5835e98fc7b4621a677305279f6b001229562` |
+| `public/media/lesson-18-poster.webp` | Frame extract from approved lesson-18.mp4 | Lesson 18 poster | `approved` | `1a44b8c41f8bc795b6b381073c23a22289fb17503f300d32a51b605f4f8093a6` |
+| `public/media/lesson-19.mp4` | Lesson 19 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1116 | The social cost of parenting differently lecture film | `approved` | `2b3d4e2d267d1c026e10c1767ccad3c0acbb99e988c2172a5158146b0e08c926` |
+| `public/media/lesson-19-poster.webp` | Frame extract from approved lesson-19.mp4 | Lesson 19 poster | `approved` | `72a8850bee1dcb1f4b387918312232fb6e526dfd261bf908ded1b01324859dab` |
 
 ## Not yet present
 

@@ -101,6 +101,9 @@ export const strings = {
     placeholderBody:
       'The paper-craft film for this lesson is being made. The full lesson below works now.',
     posterAlt: 'Paper-craft placeholder artwork for this lesson',
+    chromeLabel: 'Playback speed and fullscreen',
+    speedLabel: 'Playback speed',
+    fullscreen: 'Fullscreen',
   },
 
   quiz: {

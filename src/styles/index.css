@@ -556,6 +556,49 @@ a:hover {
   max-inline-size: var(--measure);
 }
 
+.video-stage__chrome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-block-start: var(--space-sm);
+}
+
+.video-stage__speeds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.video-stage__chip,
+.video-stage__fullscreen {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 44px;
+  min-inline-size: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--round-pill);
+  background-color: var(--surface);
+  color: var(--primary);
+  font: inherit;
+  font-family: var(--display);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.video-stage__chip--active {
+  background-color: var(--secondary-deep);
+  color: var(--on-primary);
+  border-color: transparent;
+}
+
+.video-stage__fullscreen {
+  padding-inline: 18px;
+}
+
 /* ---------- progress ---------- */
 
 .progress {

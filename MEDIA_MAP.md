@@ -64,13 +64,16 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/lesson-18-poster.webp` | Frame extract from approved lesson-18.mp4 | Lesson 18 poster | `approved` | `1a44b8c41f8bc795b6b381073c23a22289fb17503f300d32a51b605f4f8093a6` |
 | `public/media/lesson-19.mp4` | Lesson 19 v3 unique H3 chain + Eve + plaques + locked jazz mix §2.4; canvas 1344×768; wrapped title; plaque QA pass max_w 1116 | The social cost of parenting differently lecture film | `approved` | `2b3d4e2d267d1c026e10c1767ccad3c0acbb99e988c2172a5158146b0e08c926` |
 | `public/media/lesson-19-poster.webp` | Frame extract from approved lesson-19.mp4 | Lesson 19 poster | `approved` | `72a8850bee1dcb1f4b387918312232fb6e526dfd261bf908ded1b01324859dab` |
+| `public/share/course.png` | xAI papercraft still + local title plate; 1200×630 Open Graph / Twitter card | Course social preview | `approved` | `d3055e010ea3957154057cfe6504136e8dcf74874cdebfe71f5f770274e01dd5` |
+| `public/share/course-square.png` | xAI papercraft marshmallows + local title plate; 1080×1080 | Square share card | `approved` | `6ebf4e94cd4a1a0b673582cd073066748e33145e7eae7df5b916f17b3331d8ef` |
+| `public/share/course-story.png` | xAI papercraft still + local title plate; 1080×1920 | Vertical / story share card | `approved` | `2ae108ad88190f0ea0381d25467d4df4bee6cab40ef1163e1e38865bcae606e0` |
 
 ## Not yet present
 
 These land in later sprints and get their rows when the bytes exist — not before:
 
 - `public/media/lesson-NN.mp4`, `lesson-NN-poster.webp`, `lesson-NN-narration.mp3` (sprints 6–7).
-- `public/share/unit-N.png`, `public/share/course.png` (sprint 8).
+- `public/share/unit-N.png` (per-unit share cards).
 
 `public/content/lesson-NN.json` and `src/content/course.ts` are **generated content, not media**: they are
 built from `content/course.v2.json` by `scripts/build-content.mjs` on every build, so they are validated by

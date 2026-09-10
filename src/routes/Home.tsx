@@ -47,6 +47,14 @@ export function Home() {
         </div>
 
         <div className="stack">
+          <figure className="hero__share">
+            <img
+              src={`${import.meta.env.BASE_URL}share/course.png`}
+              width={1200}
+              height={630}
+              alt="Papercraft pop-up of a child at a marshmallow table while an adult walks toward a doorway."
+            />
+          </figure>
           <Disclaimer />
           <SourceCard />
         </div>

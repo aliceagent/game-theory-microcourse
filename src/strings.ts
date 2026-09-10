@@ -170,7 +170,7 @@ export const strings = {
       `${remaining} of the ${total} lessons still need all five questions correct.`,
     reviewUnitsHeading: 'The six units',
     statsHeading: 'Your run',
-    shareNote: 'Share cards for this screen arrive with the paper-craft media pass.',
+    shareNote: 'Paste the course link anywhere — friends see the papercraft marshmallow card.',
     backHome: 'Back to the course home',
     confettiLabel: 'Paper confetti',
   },

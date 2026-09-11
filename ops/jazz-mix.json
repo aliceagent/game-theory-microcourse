@@ -1,0 +1,51 @@
+{
+  "status": "LOCKED",
+  "locked_by": "jonathan",
+  "locked_at": "2026-09-09",
+  "reference_mp4": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/lesson-01-review-v3-jazz.mp4",
+  "track": "/home/nvidia/generated/paper-cut-video-instructional-site/public/media/happy-jazz-sample.mp3",
+  "notes": "Jonathan: this volume is good. Copy these numbers; do not re-tune. Audio loop of the jazz file is allowed; never loop picture.",
+  "ffmpeg": {
+    "jazz_volume": 0.22,
+    "voice_volume": 1.0,
+    "title_jazz": true,
+    "title_jazz_extra_gain": 1.0,
+    "sidechaincompress": {
+      "threshold": 0.05,
+      "ratio": 7,
+      "attack": 15,
+      "release": 380
+    },
+    "amix_weights": "1 0.5",
+    "alimiter_limit": 0.95,
+    "loudnorm": {
+      "I": -16,
+      "TP": -1.5,
+      "LRA": 11,
+      "linear": true,
+      "two_pass": true,
+      "forbid_dynamic_single_pass": true
+    }
+  },
+  "measured_on_lock": {
+    "integrated_lufs": -16.0,
+    "speech_std_16k": 0.108,
+    "title_std_16k": 0.027,
+    "speech_over_title_db_approx": 12
+  },
+  "rejected": [
+    {
+      "why": "inaudible",
+      "jazz_volume": 0.16,
+      "file_lufs": -27.7,
+      "title": "silent"
+    },
+    {
+      "why": "too loud / competing with voice",
+      "jazz_volume": "0.45-0.75",
+      "loudnorm": "single-pass/dynamic",
+      "title_std": 0.12,
+      "speech_std": 0.11
+    }
+  ]
+}

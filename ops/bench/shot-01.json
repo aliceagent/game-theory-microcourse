@@ -1,0 +1,18 @@
+{
+  "mode": "i2v",
+  "requested_duration_s": 5.167,
+  "snapped_frames": 124,
+  "snapped_duration_s": 5.166666666666667,
+  "width": 1024,
+  "height": 576,
+  "steps": 4,
+  "quality": "extra-fast",
+  "seed_used": 1101423498,
+  "comfy_prompt_id": "8ecbfb19-921d-404f-a156-49e1034aa55a",
+  "audio_mode": "native",
+  "audio_guide_truncated": false,
+  "first_frame_used": true,
+  "last_frame_used": false,
+  "first_frame_similarity": 0.9969246002654574,
+  "out": "/home/nvidia/generated/game-theory-microcourse/ops/bench/shot-01.mp4"
+}

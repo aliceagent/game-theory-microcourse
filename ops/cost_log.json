@@ -1,0 +1,1553 @@
+{
+  "project": "game-theory-microcourse",
+  "budget_usd_cap": 5.0,
+  "spent_usd": 3.04,
+  "provider_policy": {
+    "xai_image": "AUTHORIZED",
+    "xai_image_model": "grok-imagine-image",
+    "xai_image_usd": 0.02,
+    "xai_video": "PROHIBITED",
+    "xai_tts": "AUTHORIZED",
+    "local_video": "REQUIRED",
+    "local_video_engine": "minimax-h3-i2v"
+  },
+  "rules": {
+    "one_xai_image_per_lesson_video": true,
+    "i2v_first_frame": "xai grok-imagine-image $0.02",
+    "i2v_motion": "local MiniMax H3",
+    "hard_stop_if_spent_would_exceed": 5.0
+  },
+  "entries": [
+    {
+      "ts": "2026-09-08T22:52:53.884556+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/still.jpg",
+      "sha256": "91177dce7096b807c5dbcef8fb28115f7b1bd3d8a43bec9396cafd552ccf0187",
+      "status": "generated_awaiting_still_approval"
+    },
+    {
+      "ts": "2026-09-08T22:53:24.418290+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/still-v2.jpg",
+      "sha256": "60d7fbe23f6f70925215c3b307849e5e42b1e6c0856161f7c066055bcf4dbcfa",
+      "status": "generated_no_text_retry"
+    },
+    {
+      "ts": "2026-09-08T23:01:16.500944+00:00",
+      "modality": "local_h3_i2v",
+      "model": "h3-native extra-fast 4-step",
+      "lesson": 1,
+      "usd": 0.0,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/i2v.mp4",
+      "sha256": "e2ef8509267fd399d776107906b6822b0b15e3003aa3e9e3156d0b1e7571d40b",
+      "status": "TECHNICALLY_RENDERED"
+    },
+    {
+      "ts": "2026-09-09T04:15:30.529633+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 2,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/still.jpg",
+      "sha256": "705bad76792e752f75b60bb84ef0f92ed6758c8310f4a549c69c7dbbbf85ba27",
+      "status": "generated"
+    },
+    {
+      "ts": "2026-09-09T04:23:49.163534+00:00",
+      "modality": "xai_image",
+      "lesson": 3,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/still.jpg",
+      "sha256": "f1dc19a69e0d233e3cd1e47895c4414755f3e3f039795315f9867bcd0449b3c8",
+      "model": "grok-imagine-image",
+      "status": "generated"
+    },
+    {
+      "ts": "2026-09-09T04:33:37.125753+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 1,
+      "usd": null,
+      "note": "two Eve TTS chunks for full lecture blocks; provider did not return USD",
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/lesson-01-review.mp4",
+      "sha256": "ca7e744e9a0fe7afc045934ec3cdd887a0767ac063ff818ee0cdce10b1ce968b",
+      "status": "REVIEW_CANDIDATE"
+    },
+    {
+      "ts": "2026-09-09T04:39:13.304123+00:00",
+      "modality": "xai_image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "ops/out/lesson-01/title/style-card.jpg",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T04:43:26.914883+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/still.jpg",
+      "sha256": "91c3ad7b60f8e77bf80ddece5fc9a74af88b6523549f69ba10c30c2ec6fe2137",
+      "status": "generated_awaiting_vision"
+    },
+    {
+      "ts": "2026-09-09T04:43:49.460386+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/still.jpg",
+      "sha256": "874ba67691300982df4775139ef462ceb397cd6c69eb3b892eb1b2478e1f52b6",
+      "status": "generated_no_text_retry"
+    },
+    {
+      "ts": "2026-09-09T04:49:48.816638+00:00",
+      "modality": "local_h3_i2v",
+      "model": "h3-native extra-fast 4-step",
+      "lesson": 4,
+      "usd": 0.0,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/i2v.mp4",
+      "sha256": "dcd52968defdd3fa130d90cc6c7c913e4c156f591d2de239ac521149a8c98a5a",
+      "status": "TECHNICALLY_RENDERED",
+      "first_frame_similarity": 0.9956848150848738,
+      "comfy_prompt_id": "3f405a75-04d8-48e0-9923-573d23a3fe00"
+    },
+    {
+      "ts": "2026-09-09T04:50:13.413576+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/v3/still-s1.jpg",
+      "sha256": "5fe6a218aacce375603edd98b5f9f563ede50a45b23ea147a585c7c98d4c8bba",
+      "status": "v3_anchor_s1"
+    },
+    {
+      "ts": "2026-09-09T04:50:13.413790+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/v3/still-s3.jpg",
+      "sha256": "acef25cdb4e3973127fe33c59f2c575808d246968431e056d1cf87cc5914c8cf",
+      "status": "v3_anchor_s3"
+    },
+    {
+      "ts": "2026-09-09T05:18:25.680821+00:00",
+      "modality": "xai_image",
+      "lesson": 1,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/v3/still-s2-new.jpg",
+      "sha256": "909c7752b6b02cb19b6bfab43b1408c60bea21447521a9f63bc37ca1c5b17401",
+      "status": "v3_anchor_s2_unique_not_reused"
+    },
+    {
+      "ts": "2026-09-09T06:39:12.276344+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 2,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/tts/block_01.mp3",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-09T06:39:12.276344+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 2,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/tts/block_02.mp3",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-09T06:39:12.276344+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 2,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/v3/still-s1.jpg",
+      "sha256": "d488cef90ee130170a4777e01810dc7872e249d15f2b037ce5ce8d42a633dec6",
+      "status": "v3_anchor_s1"
+    },
+    {
+      "ts": "2026-09-09T06:39:12.276344+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 2,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/v3/still-s2.jpg",
+      "sha256": "6476b46e6a77de9e636d3f234e44ec6ad1750c332dd721f30d0af69bf5dcb9f1",
+      "status": "v3_anchor_s2"
+    },
+    {
+      "ts": "2026-09-09T06:39:12.276344+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 2,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/v3/still-s3.jpg",
+      "sha256": "9d985f7ce3c35c2066c4f0657ceb57587584f14286a493c2e37ff474d8c1186d",
+      "status": "v3_anchor_s3"
+    },
+    {
+      "ts": "2026-09-09T08:14:51.153724+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 2,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-02/title/style-card.jpg",
+      "sha256": "c17d6fd18ae9f7bad73669f09f6bc33b76f9bce97735cbe99ffea80b1fb41f88",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T08:39:50.677393+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 3,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/tts/block_01.mp3",
+      "sha256": "eb4d79911f92da17a95743e8aa759a70a67a56cd36dec695dde0f7795ce033dc",
+      "status": "generated_cost_unknown",
+      "duration_s": 24.36
+    },
+    {
+      "ts": "2026-09-09T08:39:50.677393+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 3,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/tts/block_02.mp3",
+      "sha256": "d8fc3259d49bd055786350f394a68e469c98d03a43faddfb5377ab8232d4feb2",
+      "status": "generated_cost_unknown",
+      "duration_s": 22.224
+    },
+    {
+      "ts": "2026-09-09T09:12:17.929462+00:00",
+      "modality": "xai_image",
+      "lesson": 3,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/v3/still-s1.jpg",
+      "sha256": "be95561573452e9961ce0d7c01361e337923652d370f70438f487f3270545f8a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T09:12:17.929622+00:00",
+      "modality": "xai_image",
+      "lesson": 3,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/v3/still-s2.jpg",
+      "sha256": "223f198a502d58cea0e56220e838b51064d10c1f4db85cc4f11cecf2da0dc30e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T09:12:17.929757+00:00",
+      "modality": "xai_image",
+      "lesson": 3,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-03/v3/still-s3.jpg",
+      "sha256": "0f81bc081ac727e3c302d8941c2b3f5aee62c6ecd3d0f41f0024f42f1ae19f16",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T10:09:17.055891+00:00",
+      "modality": "xai_image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/v3/still-s1.jpg",
+      "sha256": "6ff0229d9ca617a02cb420f63d9df011b810f79fbebaed3032b723839b0e2943",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T10:09:17.056104+00:00",
+      "modality": "xai_image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/v3/still-s2.jpg",
+      "sha256": "e85af52de429a45deb886e02634a6b29b71dc207c5e62e37016e4eebf8aabb2d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T10:09:17.056268+00:00",
+      "modality": "xai_image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/v3/still-s3.jpg",
+      "sha256": "703f92d1073f23116283fa4542ad71812b655a92add4a717246bf93f97862bcf",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:11:08.392958+00:00",
+      "modality": "xai_image",
+      "lesson": 4,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-04/title/style-card.jpg",
+      "sha256": "15c4550460029c9febcf47e4223615017a32db10751d20b3abd0f862efe12a64",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T12:20:12.001093+00:00",
+      "modality": "xai_image",
+      "lesson": 5,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-05/v3/still-s1.jpg",
+      "sha256": "e1635823ddb18741fc54a350f20b7ed7ab0742bce3094f296f424b912c7c9f83",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:20:12.001317+00:00",
+      "modality": "xai_image",
+      "lesson": 5,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-05/v3/still-s2.jpg",
+      "sha256": "4b3d3d8db08ab12654ab7b5f9afc8f854da546e36a8880c5cd0b576ef62de5b8",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:20:12.001459+00:00",
+      "modality": "xai_image",
+      "lesson": 5,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-05/v3/still-s3.jpg",
+      "sha256": "9c355a070f63e39ea66a46a90df75a672e5555da85aa9c9f67e84e16f4b2b2bf",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:54:57.814932+00:00",
+      "modality": "xai_image",
+      "lesson": 6,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-06/v3/still-s1.jpg",
+      "sha256": "4ba8f45eb9c7445fbd8adb1bd838a0b91161fbf9298762460cdee6249350b7f1",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:54:57.815097+00:00",
+      "modality": "xai_image",
+      "lesson": 6,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-06/v3/still-s2.jpg",
+      "sha256": "9c2aa03d625d84efbad83f50a72f9dd6bce3c04bb5c4584b77d8285241d5b4e2",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:54:57.815275+00:00",
+      "modality": "xai_image",
+      "lesson": 6,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-06/v3/still-s3.jpg",
+      "sha256": "b45606613096183e31b2a9ec132463642f1742a25229627ba65952e34a7041b5",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T12:54:57.815413+00:00",
+      "modality": "xai_image",
+      "lesson": 5,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-05/title/style-card.jpg",
+      "sha256": "7c138b2631810cdf764a20d7bee9e9419e7f6b8edad0f6bbca54eca36e5ea778",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T13:18:48.604585+00:00",
+      "modality": "xai_image",
+      "lesson": 7,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-07/v3/still-s1.jpg",
+      "sha256": "455a7ce25d0291adf7be12e58dc4fcc4566f22a85e0ad5be8512d05766d3023e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T13:18:48.604754+00:00",
+      "modality": "xai_image",
+      "lesson": 7,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-07/v3/still-s2.jpg",
+      "sha256": "80659e555abd5d3ecdf14dc4a9495554da180787394e657d27296de35d3233d7",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T13:18:48.604940+00:00",
+      "modality": "xai_image",
+      "lesson": 7,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-07/v3/still-s3.jpg",
+      "sha256": "694ab2a22518204bfb536ad07096f267173eec2a7be3db80415091baa7f8918d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T13:18:48.605060+00:00",
+      "modality": "xai_image",
+      "lesson": 6,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-06/title/style-card.jpg",
+      "sha256": "8112dcc15eb665f8e84718652a8121d1544401689daf590d3ca7dfbac65c8cd2",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T14:02:22.256343+00:00",
+      "modality": "xai_image",
+      "lesson": 8,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-08/v3/still-s1.jpg",
+      "sha256": "e7bbafedb6093e45888121fe807d1d0af40934c0961ddd9f6622f26f6f023150",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T14:02:22.256558+00:00",
+      "modality": "xai_image",
+      "lesson": 8,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-08/v3/still-s2.jpg",
+      "sha256": "b9b0babfb8aab2e1cb83da05012d5a2cc5946cc8b771d95182f7586a6746fb1e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T14:02:22.256760+00:00",
+      "modality": "xai_image",
+      "lesson": 8,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-08/v3/still-s3.jpg",
+      "sha256": "0bc5e52129538ba0dec8dd3a99cb196be09c95625dea9a9b1c3e05063e9c7abb",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T14:02:22.256892+00:00",
+      "modality": "xai_image",
+      "lesson": 7,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-07/title/style-card.jpg",
+      "sha256": "214a1a0f325bec855ddf79cbe98e2aa005f481860735c2568706894b275dd8da",
+      "status": "title_style_card"
+    },
+    {
+      "ts": "2026-09-09T18:13:07.526587+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 9,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-09/v3/still-s1.jpg",
+      "sha256": "7dc9dbf1a3e4901df1cc10c130c2423069d661c28e2c91cb87e9afc0f9d6acfd",
+      "status": "v3_anchor",
+      "pixels": [
+        1280,
+        720
+      ]
+    },
+    {
+      "ts": "2026-09-09T18:13:15.866275+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 9,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-09/v3/still-s2.jpg",
+      "sha256": "1583a523f7c8e303a35c812c1e5e129a527c12459a5d81a7f09aa391e76f1266",
+      "status": "v3_anchor",
+      "pixels": [
+        1280,
+        720
+      ]
+    },
+    {
+      "ts": "2026-09-09T18:13:23.233067+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 9,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-09/v3/still-s3.jpg",
+      "sha256": "fc45e6c84185b3d96baa0ab8a099c83940d75dd6ef09f016233cb42b20791f19",
+      "status": "v3_anchor",
+      "pixels": [
+        1280,
+        720
+      ]
+    },
+    {
+      "ts": "2026-09-09T18:13:28.907852+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 9,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-09/title/style-card.jpg",
+      "sha256": "d3e91f0bb527e07f934597e5e378056cdf52344fef3f97f7db450f9a4dbf9205",
+      "status": "title_style_card",
+      "pixels": [
+        1280,
+        720
+      ]
+    },
+    {
+      "ts": "2026-09-09T19:06:20.296116+00:00",
+      "modality": "xai_image",
+      "lesson": 10,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-10/v3/still-s1.jpg",
+      "sha256": "600d489cd48369db334aa04a0e44642d1ed24b34dcd5c7ca45472aab87c8492a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T19:06:20.296322+00:00",
+      "modality": "xai_image",
+      "lesson": 10,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-10/v3/still-s2.jpg",
+      "sha256": "5d149363a6399e5426a534eb87ea8e520dc006256e1d70686d06c2c442d13e8d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T19:06:20.296485+00:00",
+      "modality": "xai_image",
+      "lesson": 10,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-10/v3/still-s3.jpg",
+      "sha256": "86f9732b4e396dc694db8abd13cfadcb681d29c1e23a2147ec611ad9e49ce4e8",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:08:28.955905+00:00",
+      "modality": "xai_image",
+      "lesson": 11,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-11/v3/still-s1.jpg",
+      "sha256": "3a717e3a2db08a90684852ce7a1015694b99321e8cc2c976ee1f69e67d2dc71f",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:08:28.956196+00:00",
+      "modality": "xai_image",
+      "lesson": 11,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-11/v3/still-s2.jpg",
+      "sha256": "5827dce0491c7dbe6435775d48ee493ca9c615556035adde279ca681dd88875a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:08:28.956397+00:00",
+      "modality": "xai_image",
+      "lesson": 11,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-11/v3/still-s3.jpg",
+      "sha256": "b72f40416a105fa1243b36fa0d3916887355bc59f7ea076503d67ad85a8b7c30",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:59:11.466721+00:00",
+      "modality": "xai_image",
+      "lesson": 12,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-12/v3/still-s1.jpg",
+      "sha256": "2b3252daf23cbc182178f32c6c8bfef7a8a6853064c13d820e9dcf3b64193f4e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:59:11.466915+00:00",
+      "modality": "xai_image",
+      "lesson": 12,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-12/v3/still-s2.jpg",
+      "sha256": "a30790f0dfb00b11e2933298db106844e1f66e0b911f9f7a0d0fb29711524e2b",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T20:59:11.467079+00:00",
+      "modality": "xai_image",
+      "lesson": 12,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-12/v3/still-s3.jpg",
+      "sha256": "18659e5b57f2c2dd7c86e74a0da5d075aae7ce195d255bd3d7ea6162cb818b22",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T21:49:21.357019+00:00",
+      "modality": "xai_image",
+      "lesson": 13,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-13/v3/still-s1.jpg",
+      "sha256": "5c70f5c2a848f8ac436b3a1f0799486a1f42c0a8894a53d39376f989a77e4461",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T21:49:21.357357+00:00",
+      "modality": "xai_image",
+      "lesson": 13,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-13/v3/still-s2.jpg",
+      "sha256": "7ea9269456d168aab886edc1d4a89910b350a8b01d6c48dfcd517df4fdd35cb4",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T21:49:21.357627+00:00",
+      "modality": "xai_image",
+      "lesson": 13,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-13/v3/still-s3.jpg",
+      "sha256": "4d51db51914fb88c68798d57187a8d7a76a7cdb358e2bdaa0a5d47f89abca42f",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T22:27:47.169773+00:00",
+      "modality": "xai_image",
+      "lesson": 14,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-14/v3/still-s1.jpg",
+      "sha256": "6773fd1204ff7e9e835c05f06fe629102417a4a3b8e3c0600bb33ea682f3b2ca",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T22:27:47.170013+00:00",
+      "modality": "xai_image",
+      "lesson": 14,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-14/v3/still-s2.jpg",
+      "sha256": "800f75c749c3a5074c6e6687c0e6c5ec1a39c1464008e85a34c0a4b2fb4e8316",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T22:27:47.170250+00:00",
+      "modality": "xai_image",
+      "lesson": 14,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-14/v3/still-s3.jpg",
+      "sha256": "6dbc5c90b7fc666543554b11c4d28e5c9de45ec62bcbf180a6124499125c5c2e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:13:21.524666+00:00",
+      "modality": "xai_image",
+      "lesson": 15,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-15/v3/still-s1.jpg",
+      "sha256": "7bf1f9b646fba71b8cc2d70df4949d0c858bdf6dc38805923b900de31b9ae5a5",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:13:21.524966+00:00",
+      "modality": "xai_image",
+      "lesson": 15,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-15/v3/still-s2.jpg",
+      "sha256": "57024a50956283944ebd27d2bedf8693683b0e62f4a3042122d3bd85be46643b",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:13:21.525138+00:00",
+      "modality": "xai_image",
+      "lesson": 15,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-15/v3/still-s3.jpg",
+      "sha256": "c12c24ef778311270f2b00d26a7f836e3f83ebb28b39fc5d5d3e98c1c282be76",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:58:49.271510+00:00",
+      "modality": "xai_image",
+      "lesson": 16,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-16/v3/still-s1.jpg",
+      "sha256": "7055346565a49b5de0afef64ca276ec1b2767b5405ae118c03020c01914073f8",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:58:49.271768+00:00",
+      "modality": "xai_image",
+      "lesson": 16,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-16/v3/still-s2.jpg",
+      "sha256": "9174e3df20ab0eb389c9bef6f5d49ee0e32b829694180cf45066e23de6c94c97",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-09T23:58:49.272040+00:00",
+      "modality": "xai_image",
+      "lesson": 16,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-16/v3/still-s3.jpg",
+      "sha256": "07b4664fe50e4ca1db1ba9717db56c3df23fffa6af8ebcebfc0dd3eddad9231c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T01:03:47.228322+00:00",
+      "modality": "xai_image",
+      "lesson": 17,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-17/v3/still-s1.jpg",
+      "sha256": "a8c6ac1334739a3126a8b6031dd7fcf4cdba2dbf7cdd173c1e131115009e8268",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T01:03:47.228668+00:00",
+      "modality": "xai_image",
+      "lesson": 17,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-17/v3/still-s2.jpg",
+      "sha256": "d6693cc60c6f6cc9fa91efe6817b284441e8914bf280078d1e837e9643e7e75d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T01:03:47.228865+00:00",
+      "modality": "xai_image",
+      "lesson": 17,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-17/v3/still-s3.jpg",
+      "sha256": "d050b15ef30ea177652a69190c03cea84f0c1524c8c4d6f50122937577d1c0bf",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T02:24:07.156570+00:00",
+      "modality": "xai_image",
+      "lesson": 18,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-18/v3/still-s1.jpg",
+      "sha256": "6e220e058617231792c877fa94f4f4e89506c486ecbcdc2d4ad459e90dac5109",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T02:24:07.156805+00:00",
+      "modality": "xai_image",
+      "lesson": 18,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-18/v3/still-s2.jpg",
+      "sha256": "edc2c7035e42723f3aa729a4a1e07b5f4530c1be357a96ec51c62081a59878ea",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T02:24:07.157064+00:00",
+      "modality": "xai_image",
+      "lesson": 18,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-18/v3/still-s3.jpg",
+      "sha256": "ad839413684b6f3e4206e6db3db50003728c0103ea190bf30e431794e74c752d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:07:01.534508+00:00",
+      "modality": "xai_image",
+      "lesson": 19,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-19/v3/still-s1.jpg",
+      "sha256": "59435b269e285bd0244cae2a24540b522990fc6d4ba6e4d0de078c3eacb71f22",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:07:01.534780+00:00",
+      "modality": "xai_image",
+      "lesson": 19,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-19/v3/still-s2.jpg",
+      "sha256": "d2ad891ef63407a7d74177a8d88d2d2a82b26ea84823e75d4bc44f900e02b365",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:07:01.534933+00:00",
+      "modality": "xai_image",
+      "lesson": 19,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-19/v3/still-s3.jpg",
+      "sha256": "3a97c7ff45f420589235d7c85dd4c9eb812b80c2eca15df4863d9f9525a3d8d5",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:52:02.954254+00:00",
+      "modality": "xai_image",
+      "lesson": 20,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-20/v3/still-s1.jpg",
+      "sha256": "03e061877dda05c88954cbc99da569a676224887dac60c0cce589477190d8977",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:52:02.954519+00:00",
+      "modality": "xai_image",
+      "lesson": 20,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-20/v3/still-s2.jpg",
+      "sha256": "f627a29ccf2314bc55bbac0e7f035630b838b5fe191da56897c448da1a22af49",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T03:52:02.954690+00:00",
+      "modality": "xai_image",
+      "lesson": 20,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-20/v3/still-s3.jpg",
+      "sha256": "d718f733c899f467a3e38de1cd1f1568050fe7821827ced99eee8cc775bec0de",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T04:24:02.051046+00:00",
+      "modality": "xai_image",
+      "lesson": "share",
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/share/og-base.jpg",
+      "sha256": "61c6ca6da2a8be8fd3fa19309927935e70cbcc6e61d95b636301a28aa33968c4",
+      "status": "share_kit"
+    },
+    {
+      "ts": "2026-09-10T04:24:02.051169+00:00",
+      "modality": "xai_image",
+      "lesson": "share",
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/share/square-base.jpg",
+      "sha256": "bf8997e08dde3c2074bebab25fb801587b0fb169e629105309ad3cf9182aa290",
+      "status": "share_kit"
+    },
+    {
+      "ts": "2026-09-10T04:24:02.051266+00:00",
+      "modality": "xai_image",
+      "lesson": "share",
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/share/icon-base.jpg",
+      "sha256": "1502138c5d56ad8dfb54040f6bdeed45629b3021806797446a5970039f17f7bb",
+      "status": "share_kit"
+    },
+    {
+      "ts": "2026-09-10T04:38:46.002129+00:00",
+      "modality": "xai_image",
+      "lesson": 21,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-21/v3/still-s1.jpg",
+      "sha256": "b826846b7d38c9cbcd617875a1bcf66c6be6b04fe1dd54f3034bca65b165916d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T04:38:46.002342+00:00",
+      "modality": "xai_image",
+      "lesson": 21,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-21/v3/still-s2.jpg",
+      "sha256": "56195cbfb15dda2bb0fac1ba4eefb6f9c8f3a9efacaf265f2d60aa4c61e30aa9",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T04:38:46.002534+00:00",
+      "modality": "xai_image",
+      "lesson": 21,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-21/v3/still-s3.jpg",
+      "sha256": "4c6bffdd9e67b598bbde68be68855b4a1a75f1d445b78cde3c5c970418d833d8",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T05:26:36.925548+00:00",
+      "modality": "xai_image",
+      "lesson": 22,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-22/v3/still-s1.jpg",
+      "sha256": "0633ee22c53d6f3d805c03e99cbc6a7dbf13acba5e03efc681332b152dd413de",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T05:26:36.925770+00:00",
+      "modality": "xai_image",
+      "lesson": 22,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-22/v3/still-s2.jpg",
+      "sha256": "1aa0546425d480dc8f1233d1033d1fb696e20a582b698f483bdf4942dd7c0fe1",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T05:26:36.925921+00:00",
+      "modality": "xai_image",
+      "lesson": 22,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-22/v3/still-s3.jpg",
+      "sha256": "41efb3661d5db39ab7fb8aca401e91b33da4303281ca31dc31b2ade3bd792420",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T06:02:19.298254+00:00",
+      "modality": "xai_image",
+      "lesson": 23,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-23/v3/still-s1.jpg",
+      "sha256": "2fc109adc0b18198555335e4b433237a175bcebc5f2f9fa8371644db33537591",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T06:02:19.298559+00:00",
+      "modality": "xai_image",
+      "lesson": 23,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-23/v3/still-s2.jpg",
+      "sha256": "bfe239cfaf9580213fce7151f95c43eb07dece6b4c82098270100f701884fe8a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T06:02:19.298761+00:00",
+      "modality": "xai_image",
+      "lesson": 23,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-23/v3/still-s3.jpg",
+      "sha256": "c77d6f91118a0e8274d809a8fd9581428293db25ae6be39ea9871085d8e3664d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:01:48.473585+00:00",
+      "modality": "xai_image",
+      "lesson": 24,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-24/v3/still-s1.jpg",
+      "sha256": "29bffca3dfe06008a4253049d045d97436985f18448389b5d5d5a999e6318f75",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:01:48.473837+00:00",
+      "modality": "xai_image",
+      "lesson": 24,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-24/v3/still-s2.jpg",
+      "sha256": "6a656102ede429309b6f480818971f8a9e01c6d01c1d2612e88fa9bc874dda08",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:01:48.473978+00:00",
+      "modality": "xai_image",
+      "lesson": 24,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-24/v3/still-s3.jpg",
+      "sha256": "67256b4257400c5e47112224a97798da3e8c9e63a93fc589eee8380dddd56fa9",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:49:45.710552+00:00",
+      "modality": "xai_image",
+      "lesson": 25,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/v3/still-s1.jpg",
+      "sha256": "f08ce6084b3604df9f02177bdb1068e286a7902a8cedc3c309adc2b95ba6fc49",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:49:45.710860+00:00",
+      "modality": "xai_image",
+      "lesson": 25,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/v3/still-s2.jpg",
+      "sha256": "452a37d30cacc57d8ba89bc8df3e98eb52c5503b75c4d3af42adc450dc8535b9",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:49:45.711010+00:00",
+      "modality": "xai_image",
+      "lesson": 25,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/v3/still-s3.jpg",
+      "sha256": "60d208e4d6d8f23bfa503852548080bd928e52bb4d0c4abec02dc9ca495fef9d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:49:45.711132+00:00",
+      "modality": "xai_image",
+      "lesson": 25,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/v3/still-s4.jpg",
+      "sha256": "157d88df658c062b5760e6d1aeaf8427e324c2d3d9f65f2bbaa2370369d53f18",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T07:55:43.493554+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 25,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/tts/block_01.mp3",
+      "sha256": "30966155a1386ac89153027af9a2f91612795bcc5b97d84c105f4eec678f7a5a",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-10T07:55:43.493554+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 25,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-25/tts/block_02.mp3",
+      "sha256": "489c82865e1ec726842d3be87c0ca7227ce4a08740f7022962cc28ef75a4cbe8",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-10T09:21:01.213155+00:00",
+      "modality": "xai_image",
+      "lesson": 26,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-26/v3/still-s1.jpg",
+      "sha256": "d903469a1feed96dc5b6ecee35fed01b29ce02c7a7629a745b9f4b3063a2b2f3",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T09:21:01.213598+00:00",
+      "modality": "xai_image",
+      "lesson": 26,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-26/v3/still-s2.jpg",
+      "sha256": "0bc3df7466edc02b861846d73f1f1ade91620ff679423712d26eb5f6085b1611",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T09:21:01.213879+00:00",
+      "modality": "xai_image",
+      "lesson": 26,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-26/v3/still-s3.jpg",
+      "sha256": "29170c012841d8c695e40cfa911c021bb80a4d27148739a77000110e2d3988a3",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T10:30:06.652662+00:00",
+      "modality": "xai_image",
+      "lesson": 27,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-27/v3/still-s1.jpg",
+      "sha256": "9def2b1ef74adade47225e0f14404b072675131feb95ba9d2f42a02036925413",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T10:30:06.652868+00:00",
+      "modality": "xai_image",
+      "lesson": 27,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-27/v3/still-s2.jpg",
+      "sha256": "05be5c7db9cdb1ae55676daf775f94b5d021cafc6229633511def3871cbf6920",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T10:30:06.652998+00:00",
+      "modality": "xai_image",
+      "lesson": 27,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-27/v3/still-s3.jpg",
+      "sha256": "7130fce8a15d93d74dbad9b01fe9a619ca27710f91f27b4d1623516ffac155c2",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T11:14:55.166552+00:00",
+      "modality": "xai_image",
+      "lesson": 28,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-28/v3/still-s1.jpg",
+      "sha256": "e2e51bd266cedef72e3faf00638bd7bb8be219cd17e913f2e3987607fa12c64a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T11:14:55.166782+00:00",
+      "modality": "xai_image",
+      "lesson": 28,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-28/v3/still-s2.jpg",
+      "sha256": "6e825e0284f44030155a15ef260f7fd3cd755e7de67496a9b1a0e924d2dda689",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T11:14:55.167046+00:00",
+      "modality": "xai_image",
+      "lesson": 28,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-28/v3/still-s3.jpg",
+      "sha256": "845f6ea322d60be7dbebc86c25bff8805c506057e820d34161303cbfa8aa88c9",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T11:15:32.573254+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 28,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-28/tts/block_01.mp3",
+      "sha256": "c77f30b908ae5f2b9ae7bf760dada1dc0bc310da7aacd4f1b4044ed1159b873f",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-10T11:15:38.595583+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 28,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-28/v3/still-s1.jpg",
+      "sha256": "fac7dbc1ec4c496d446e972b44431d2b284d58a1960ef65a238009833cf23ab1",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:07:25.362773+00:00",
+      "modality": "xai_image",
+      "lesson": 29,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-29/v3/still-s1.jpg",
+      "sha256": "60bb94148b751ed47040f14cf07ef1ea9ed6e31eaca626ef14f5c3c7e4642dfb",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:07:25.363022+00:00",
+      "modality": "xai_image",
+      "lesson": 29,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-29/v3/still-s2.jpg",
+      "sha256": "32e11590b5f6949d5630db9ff2584dc2fa2bf841de6ca3112056f22f2ae60e20",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:07:25.363261+00:00",
+      "modality": "xai_image",
+      "lesson": 29,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-29/v3/still-s3.jpg",
+      "sha256": "0f343d6e8d3779c6d8eb4b9a3c97679630b1a1d34fb7887489a80caf9c338785",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:50:19.077119+00:00",
+      "modality": "xai_image",
+      "lesson": 30,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-30/v3/still-s1.jpg",
+      "sha256": "02c14fed7e655d525bb64f5084f0f5e69dec87d0f5a4c9ed0ef19af5c33c39a6",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:50:19.077435+00:00",
+      "modality": "xai_image",
+      "lesson": 30,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-30/v3/still-s2.jpg",
+      "sha256": "d6570bb356f339ec3b7d77acb4f51bce5ab8898f96c9a45555358f0997f66a64",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:50:19.077759+00:00",
+      "modality": "xai_image",
+      "lesson": 30,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-30/v3/still-s3.jpg",
+      "sha256": "ed5bbe8e0aae4ca0c499ad1b4c9d681402b1c72d0cb7b1e3486493cc9339d8b1",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T12:50:19.077918+00:00",
+      "modality": "xai_image",
+      "lesson": 30,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-30/v3/still-s4.jpg",
+      "sha256": "e86ac319dac5ce64128d4b36c6070f9c7a10f89377c74c0d4942abbc26bfc91d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:29:40.096195+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 31,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/tts/block_01.mp3",
+      "sha256": "3609948952c1226b31020bc5c1d204f56aadd6186cbd7349e87f99f74f0b9d66",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-10T14:31:30.176799+00:00",
+      "modality": "xai_image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s1.jpg",
+      "sha256": "775f35c6a59789d106e6b9735f01478725dd320e802eac0290359f3e3ff82805",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:31:30.177789+00:00",
+      "modality": "xai_image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s2.jpg",
+      "sha256": "b29f775ff852d6fa60eebda2884eaa60b686ade18c4094a7dd004555fa04f25b",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:31:30.178064+00:00",
+      "modality": "xai_image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s3.jpg",
+      "sha256": "0f58a49192900eddb6a2ae0f9949afea65e404c4410379907450a3b893708758",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:31:30.178224+00:00",
+      "modality": "xai_image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s4.jpg",
+      "sha256": "22ee827267ebb641f93bed9eb4a1331b4a336c70a1bda257bebd94d3fc44ca4c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:33:12.814450+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/title/style-card.jpg",
+      "sha256": "ab5c7d648f0ed461f324216bcc85bfa4b2740cc6be0b61a608f7f069dc8b3cfc",
+      "status": "v3_title_style"
+    },
+    {
+      "ts": "2026-09-10T14:33:35.297209+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s1.jpg",
+      "sha256": "df848a4eee0a5e809ac52689601e6f0b60f56f6224e7a5f788b13e9f41c5c0cb",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:33:40.576944+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s2.jpg",
+      "sha256": "c8c5da82450690ef64daff78ac13cd254435ca69ca7f91b07b993d2ed76b9e7c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T14:33:47.306774+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 31,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-31/v3/still-s3.jpg",
+      "sha256": "cb35fd6f31188ad0fd1334075a5c8b3bae6295eb7da780d7f1e2d6cfd451709b",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T15:45:38.784279+00:00",
+      "modality": "xai_image",
+      "lesson": 32,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-32/v3/still-s1.jpg",
+      "sha256": "8b1683196d6ab9003074cf32b4802c2a42428d1308d2f1009639762dbb0c9d11",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T15:45:38.784794+00:00",
+      "modality": "xai_image",
+      "lesson": 32,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-32/v3/still-s2.jpg",
+      "sha256": "f6b368da9f50fe639348404ad7037c2d77a6409162476bfec7b3f243aa733917",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T15:45:38.785146+00:00",
+      "modality": "xai_image",
+      "lesson": 32,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-32/v3/still-s3.jpg",
+      "sha256": "c1b2189ad94e1566dcaba7ff3c1b7ab40a0a30375f1eb268fd2cc7f9ad0eee81",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:40:24.575915+00:00",
+      "modality": "xai_image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s1.jpg",
+      "sha256": "b6c287a9cf49c8e2e809540b93505221fc0a72416e1bad79318d9188c43aabba",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:40:24.576197+00:00",
+      "modality": "xai_image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s2.jpg",
+      "sha256": "f5dcc21a892b09813543a9363d8e981e468e9e9876e358988a28d080372c49da",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:40:24.576341+00:00",
+      "modality": "xai_image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s3.jpg",
+      "sha256": "2ba0623942c3a984674b70ebf749db63c1aa820952bc5925f6967cd5f6615252",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:40:28.122424+00:00",
+      "modality": "xai_tts",
+      "model": "xai eve en",
+      "lesson": 33,
+      "usd": null,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/tts/block_01.mp3",
+      "sha256": "efbbf79779b6b966f82bbf3d2100f7896739289777c1c57b422cd29c3c23373e",
+      "status": "generated_cost_unknown"
+    },
+    {
+      "ts": "2026-09-10T16:42:30.320617+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s1.jpg",
+      "sha256": "dad241b4ca3e8ea6975c8c23d2017097cdd2f564924dfa55a31cc5d048ab6fff",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:42:36.339640+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s2.jpg",
+      "sha256": "7931b086c0c495abbffca1fbe1fb517fc825321a497a09c7730e0567eda6b81c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:42:44.153399+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/v3/still-s3.jpg",
+      "sha256": "6d51fad5877a82af1a19efb82078640b7a6993121a30d0d454ed3f426e90b32c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T16:43:12.311460+00:00",
+      "modality": "xai_image",
+      "model": "grok-imagine-image",
+      "lesson": 33,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-33/title/style-card.jpg",
+      "sha256": "3520739ce68ddc660f6f2e18fb5030dabd1c13b907aaa55bbb6754b3259c0ce2",
+      "status": "v3_title_style"
+    },
+    {
+      "ts": "2026-09-10T17:37:55.123920+00:00",
+      "modality": "xai_image",
+      "lesson": 34,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-34/v3/still-s1.jpg",
+      "sha256": "83738f9257c7dcae4d15ee9b5e9013ab545ef68baa92a1c783ad1ed8688aabfc",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T17:37:55.124168+00:00",
+      "modality": "xai_image",
+      "lesson": 34,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-34/v3/still-s2.jpg",
+      "sha256": "e552326576f9916a471fdf013841af05eb4fb95ce705ea4de5cc727d0876fe71",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T17:37:55.124291+00:00",
+      "modality": "xai_image",
+      "lesson": 34,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-34/v3/still-s3.jpg",
+      "sha256": "ba12dd657cb537ce60366704a5d458994afb457d33a6d693b894c4041a877f2e",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T18:26:07.074710+00:00",
+      "modality": "xai_image",
+      "lesson": 35,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-35/v3/still-s1.jpg",
+      "sha256": "06366e9fb1901e3a653a17c9176bbe03295a778585f6b6dcad2d3492cdb0e453",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T18:26:07.074989+00:00",
+      "modality": "xai_image",
+      "lesson": 35,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-35/v3/still-s2.jpg",
+      "sha256": "7c3c0d9c0e780909c8fb7bbf98e3833e14e12010389b096087e8891b3b10c319",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T18:26:07.075177+00:00",
+      "modality": "xai_image",
+      "lesson": 35,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-35/v3/still-s3.jpg",
+      "sha256": "f3d310dc4a8dc4692214656da77e037498f2e2bb3cfd124acd2f14f1a0e9507f",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T18:26:07.075304+00:00",
+      "modality": "xai_image",
+      "lesson": 35,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-35/v3/still-s4.jpg",
+      "sha256": "132decdb8c793e56772abbde8b7bafcacc67db4d49d5dfce9ba2dfe66906f8ba",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T19:47:06.111336+00:00",
+      "modality": "xai_image",
+      "lesson": 36,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-36/v3/still-s1.jpg",
+      "sha256": "f70ec9fac30ce1dc9101eda0f9260f98d60d1a70e3e4d3f24058a9cf85d83aa3",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T19:47:06.111692+00:00",
+      "modality": "xai_image",
+      "lesson": 36,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-36/v3/still-s2.jpg",
+      "sha256": "a8531db3ea8bdd312c6b524cbd1563f4998f2518e219669d867e4a914a140e8c",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T19:47:06.112062+00:00",
+      "modality": "xai_image",
+      "lesson": 36,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-36/v3/still-s3.jpg",
+      "sha256": "3ef3c5be9a30513a9961699e92f39f19e6bedff5bbc3ab99be69df4ac341933d",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T21:02:25.345455+00:00",
+      "modality": "xai_image",
+      "lesson": 37,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-37/v3/still-s1.jpg",
+      "sha256": "b3848c1c3c5568d760aea7ef66226dc4d5af6c75b1703dfe0dd1815e340a1156",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T21:02:25.345740+00:00",
+      "modality": "xai_image",
+      "lesson": 37,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-37/v3/still-s2.jpg",
+      "sha256": "4efef0d237269ed38471580901ebf147431a4b647df6182087e08d09e0a53a35",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T21:02:25.345985+00:00",
+      "modality": "xai_image",
+      "lesson": 37,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-37/v3/still-s3.jpg",
+      "sha256": "d1a3cd904b369d4750f4c62e5170d7306f808ad835fc938a02acafd2ea152497",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T21:02:25.346235+00:00",
+      "modality": "xai_image",
+      "lesson": 37,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-37/v3/still-s4.jpg",
+      "sha256": "10dfbf9138db82acb90b29e72124b814ad3aff9fd46ccd13e8e8cd8fa30c1349",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T22:11:54.314871+00:00",
+      "modality": "xai_image",
+      "lesson": 38,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-38/v3/still-s1.jpg",
+      "sha256": "8c62fab7e0428df0fdfe49345e7d37d5640d9d6ca92ae04aedab3c18b15768c5",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T22:11:54.315066+00:00",
+      "modality": "xai_image",
+      "lesson": 38,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-38/v3/still-s2.jpg",
+      "sha256": "2f9173f4f867a0cbfbf7591dd70cfe729476013757738913462653009c5c0f82",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T22:11:54.315225+00:00",
+      "modality": "xai_image",
+      "lesson": 38,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-38/v3/still-s3.jpg",
+      "sha256": "a9c5e2879840d9aa0a351bb0332e8a1f815268c43d6aa72443e2b5b2bc0c3749",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T22:11:54.315411+00:00",
+      "modality": "xai_image",
+      "lesson": 38,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-38/v3/still-s4.jpg",
+      "sha256": "74922d33b8bf830a524803e75a8ae7a5d2eff2e63b41c6ef17a8c7e03e293a94",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:12:26.437716+00:00",
+      "modality": "xai_image",
+      "lesson": 39,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-39/v3/still-s1.jpg",
+      "sha256": "1ecf492631e41216c4c060abbbaced4601627eedb3f71b8c33836160706b1e45",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:12:26.438026+00:00",
+      "modality": "xai_image",
+      "lesson": 39,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-39/v3/still-s2.jpg",
+      "sha256": "f3b83031610dc859bd822a91da9163f97bcbc3fe15bf4c8e1efc27cb7178e9b4",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:12:26.438313+00:00",
+      "modality": "xai_image",
+      "lesson": 39,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-39/v3/still-s3.jpg",
+      "sha256": "df5bdb140f94c34c4673c2cf399ba95143d1fbcb3f54a148fe0660dc5f03255a",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:54:39.537735+00:00",
+      "modality": "xai_image",
+      "lesson": 40,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-40/v3/still-s1.jpg",
+      "sha256": "9b6ecb50a76ef0dd8bd9c9426a78003114f2f96b4c8ff9e4f39b66676ec3cc91",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:54:39.538011+00:00",
+      "modality": "xai_image",
+      "lesson": 40,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-40/v3/still-s2.jpg",
+      "sha256": "c61bbf7449ccbb173abc5204aa1b90fdd8456e3020a3dcbb31b15dc80730b000",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:54:39.538262+00:00",
+      "modality": "xai_image",
+      "lesson": 40,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-40/v3/still-s3.jpg",
+      "sha256": "94cd870c68d24224944376877417ba14bcdb33ad71e238139f9f2d059fb4fd26",
+      "status": "v3_anchor"
+    },
+    {
+      "ts": "2026-09-10T23:54:39.538439+00:00",
+      "modality": "xai_image",
+      "lesson": 40,
+      "usd": 0.02,
+      "path": "/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-40/v3/still-s4.jpg",
+      "sha256": "2de2ee20f9802330c223d5e0dca699a0ff4d7838289a0fae47c563812c199379",
+      "status": "v3_anchor"
+    }
+  ]
+}

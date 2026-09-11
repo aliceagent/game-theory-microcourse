@@ -16,6 +16,12 @@ qa
 src/content/course.ts
 public/content/
 
+# Production pipeline: keep source/scripts/state, not bulk renders
+ops/out/
+ops/__pycache__/
+ops/**/__pycache__/
+__pycache__/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -26,3 +32,7 @@ public/content/
 *.njsproj
 *.sln
 *.sw?
+
+# Rejected-size 1024 bench footage (keep JSON evidence only)
+ops/bench/*.mp4
+ops/bench/*.png

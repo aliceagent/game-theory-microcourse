@@ -1,6 +1,8 @@
 # Lesson Film Methodology — Game Theory Microcourse
 
-**Status:** LOCKED. Jonathan (2026-09-09): Lesson 1 v3 PASSED. This methodology applies at the same quality bar to the entire 40-lesson series. **1344x768 is LOCKED — do not re-ask resolution.**
+**Status:** LOCKED. Jonathan (2026-09-09): Lesson 1 v3 PASSED. Same quality bar for the series.
+
+**Canvas:** ALL lessons **1344×768**. 1024×576 was tried for L5–L7 and **rejected** (Jonathan 2026-09-09: looks bad; L7 plaques clipped). Machine copy: `ops/canvas.json`. Plaque QA: `docs/SUBTITLE-PLAQUE-QA.md`.
 
 **Canonical copy:** this file. Pointer copy: `/home/nvidia/.hermes/plans/2026-09-09-game-theory-film-methodology-fable.md`.
 
@@ -37,12 +39,12 @@ These are locked by Jonathan as of the Lesson 1 v3 pass. They are not suggestion
 
 ### 1.5 Cost and tooling
 12. **First frames:** xAI `grok-imagine-image`, $0.02/image. **Motion:** local MiniMax H3 only. The **xAI video API is prohibited.** **Hard series spend cap: $5.**
-13. **GPU discipline:** one heavy job at a time on this host. Use `h3-native.py --lock-wait` / the gpu_hold mechanism. `extra-fast` is the fastest preset and still costs ~4.7 min per 5.17 s shot at 1344x768 — plan around it; do not attempt to parallelize heavies.
+13. **GPU discipline:** one heavy job at a time on this host. Use `h3-native.py --lock-wait` / the gpu_hold mechanism. `extra-fast` at 1344×768 measured ~4.9 min/shot. A 1024×576 bench exists only as a rejected-size experiment (`ops/bench/resolution-1024x576.json`). Do not parallelize heavies. Do not use 1024 masters.
 
 ### 1.6 Autonomy and operations
 14. **Overnight conveyor:** cron worker every 12 minutes (job id `3b8548510eb6`) plus a stall watchdog. A Telegram turn ending is **not** a stop signal. **Waiver in force:** no per-artifact human gates after the methodology lock. The Lesson 1 v3 pass locks quality, resolution, and method for the series — do not wait for per-lesson approval.
 15. Opus coding sprints may hit max-turns; salvage the working tree, and Hermes verifies lint/build afterward.
-16. **Vercel:** the *first* deploy of a project is production even without `--prod`; subsequent deploys are previews unless `--prod` is passed. Lesson media updates go out as **preview** deploys.
+16. **Vercel:** the *first* deploy of a project is production even without `--prod`; **pushes to `main` auto-deploy production** for this repo. See `docs/RELEASE-PROCESS.md`.
 
 ### 1.7 Assembly
 17. Assemble with the ffmpeg **concat demuxer** over full unique shots. **Strip native H3 audio** from every shot. Mux the approved Eve voice + **§2.4 locked jazz mix** at final assembly only.
@@ -57,7 +59,7 @@ Everything in this section was measured on the passed Lesson 1 v3 run. Use it as
 `/home/nvidia/generated/game-theory-microcourse/ops/out/lesson-01/lesson-01-review-v3.mp4`
 
 - Total **90.538 s** = 4 s title card + **86.538 s** voice.
-- **1344x768**, ~20 MB.
+- **All lessons 1344×768.** 1024×576 was tried for L5–L7 and rejected.
 - Picture: **17 unique** extra-fast H3 I2V shots × 5.167 s, concatenated in full, then **tail-trimmed** to the voice length. Never looped.
 
 ### 2.2 Voice (TTS)
@@ -107,7 +109,7 @@ loudnorm I=-16 TP=-1.5 LRA=11 **two-pass linear=true**
   --mode i2v \
   --quality extra-fast \
   --duration 5.167 \
-  --resolution 1344x768 \
+  --resolution $(python3 -c "import json;c=json.load(open('ops/canvas.json'));print('1344x768' if N<5 else c['resolution'])") \
   --audio-mode native \
   --lock-wait 300
 ```
@@ -117,7 +119,8 @@ loudnorm I=-16 TP=-1.5 LRA=11 **two-pass linear=true**
 - `--audio-mode native` generates audio we then discard. That is a known speed cost; **keep it** until a measured silent path exists (see Pitfalls).
 
 ### 2.7 Measured cadence
-- **~282–293 s wall time per 5.17 s shot** (~4.7 min) at 1344x768 extra-fast.
+- **~287–305 s wall time per 5.17 s shot** (~4.9 min) at 1344×768 extra-fast (L1–L4 mtime deltas).
+- **1024×576 extra-fast timed bench (n=3, 2026-09-09):** 148.5 / 147.8 / 149.5 s → **mean 148.6 s (~2.5 min/shot)**. **1.98× faster** than 294 s baseline (saves **145 s/shot**). File: `ops/bench/resolution-1024x576.json`.
 - An 11.542 s extra-fast attempt **timed out at 900 s**. Long shots are not viable; the unique 5.167 s chain is the method.
 
 ### 2.8 Spend
@@ -133,10 +136,10 @@ Execute this end-to-end per lesson N. **Do not wait for per-lesson approval** (w
 2. **Align.** Whisper `small` word timestamps over `voice.wav`. Plaques follow the *audio as spoken* (see Whisper-mishear pitfall).
 3. **Beat plan.** Divide the voice duration into 5.167 s beats; the shot count is `ceil(voice / 5.167)` so unique picture ≥ narration. (Lesson 1: 86.538 s → 17 shots = 87.839 s of picture, tail-trimmed.)
 4. **Stills.** Generate ~3 **new, unused** xAI stills per lesson at chapter cut points (plus title style-card treatment). Verify each first-frame SHA-256 has never seeded an I2V. Deterministic Pillow type for all lettering.
-5. **Motion.** For each chapter: seed the first shot from the fresh still, then chain — extract last frame → new image → next I2V. `--quality extra-fast`, 1344x768, shots ≤ 7 s (default 5.167 s), `--lock-wait` respected, one heavy at a time.
+5. **Motion.** For each chapter: seed the first shot from the fresh still, then chain — extract last frame → new image → next I2V. `--quality extra-fast`, canvas from `ops/canvas.json` (**1344×768 for every lesson**), shots ≤ 7 s (default 5.167 s), `--lock-wait` respected, one heavy at a time.
 6. **Assemble.** Concat demuxer over **full** unique shots (no per-shot frame drops — see seam pitfall), strip native H3 audio, prepend the title card (once, monotonic zoom OK), burn plaques, tail-trim picture to voice, mux Eve + **locked jazz mix §2.4**.
 7. **QA (automated).** Check: total duration = title + voice (±1 frame); `freezedetect` finds no held frames; no `-stream_loop` anywhere in the assembly command history; picture-vs-voice reconciliation followed §1.1 rule 3.
-8. **Publish.** Copy the final MP4 to `public/media/`; deploy as a **preview** (not `--prod`).
+8. **Publish.** Copy the final MP4 to `public/media/`; push to `main` deploys production. Verify `Content-Type: video/mp4` and exact byte size. See `docs/RELEASE-PROCESS.md`.
 9. **YouTube (only after Jonathan approves that lesson’s film).** Upload to channel **Jonathan Caras** `@jonathancaras` `UCIH9lesjd48E6GPkzXmOV4g` using `YOUTUBE_TOKEN_PATH=/home/nvidia/.hermes/youtube_token_jonathan_caras_channel.json` and `/home/nvidia/youtube-publisher/youtube_upload.py`. Category 27, language `en`, not made for kids. Full description: title, objective, micro-points, chapters, course URL, playlist URL. Playlist **The Marshmallow Experiment** `PLR-9qisXHS88` (create once, then add idempotently). Public only with `--confirm-public` after that lesson is approved. Persist a secret-free receipt. Do not upload unapproved lessons.
 10. Move to lesson N+1.
 
@@ -179,7 +182,7 @@ Each of these cost real time on Lesson 1. Do not rediscover them.
 
 | Parameter | Locked value |
 |---|---|
-| Resolution | **1344x768** (do not re-ask) |
+| Resolution | **1344×768** for every lesson (`ops/canvas.json`). 1024×576 rejected. |
 | Default shot | 5.167 s (124 frames @ 24 fps) |
 | Legal frames | `n % 17 == 5`, clip ≤ 7 s (max legal 6.583 s) |
 | Motion | `/home/nvidia/bin/h3-native.py --mode i2v --quality extra-fast` |

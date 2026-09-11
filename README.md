@@ -53,7 +53,7 @@ Headless Chromium (`puppeteer-core`) drives the real learner flows and asserts:
   loop with the rejected option struck out and disabled, explanations render only once every question is
   correct, and the progress bar tracks 0% → 60% → 100%;
 - progress survives a refresh and the home CTA advances to the next lesson;
-- lesson 40 is reachable and carries the honest "Video in production" stub copy;
+- lesson 40 is reachable and plays the shipped `lesson-40.mp4` (no production stub);
 - the transcript disclosure opens and closes;
 - disclaimer and source card appear on both home and lesson pages;
 - no horizontal overflow at 1440 or 390 px, and the mobile CTA and quiz options fit the viewport;
@@ -91,6 +91,6 @@ Progress is stored in `localStorage` under `gt-course-progress-v1`. There is no 
 
 ## Deploy
 
-Public GitHub + **Vercel preview only**. Do not promote to production until Jonathan asks.
+Public GitHub. **Pushes to `main` deploy production** (`https://game-theory-microcourse.vercel.app`). The first Vercel deploy of a new project is production even without `--prod`. See `docs/RELEASE-PROCESS.md`.
 
 Site source is MIT. Course content is reconstructed from the public lecture linked above. Generated media remains copyright Jonathan Caras unless separately licensed.

@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-09T12:16:19.983418+00:00",
+  "candidate": "1024x576",
+  "n": 3,
+  "walls_s": [
+    148.47,
+    147.84,
+    149.53
+  ],
+  "mean_s": 148.6,
+  "min_s": 147.84,
+  "max_s": 149.53,
+  "baseline_1344x768_mean_s": 294.0,
+  "speedup": 1.978,
+  "delta_s": 145.4,
+  "pixel_ratio": 0.571,
+  "runs": [
+    {
+      "i": 1,
+      "wall_s": 148.47,
+      "out": "/home/nvidia/generated/game-theory-microcourse/ops/bench/shot-01.mp4",
+      "width": 1024,
+      "height": 576,
+      "snapped_duration_s": 5.166666666666667,
+      "quality": "extra-fast"
+    },
+    {
+      "i": 2,
+      "wall_s": 147.84,
+      "out": "/home/nvidia/generated/game-theory-microcourse/ops/bench/shot-02.mp4",
+      "width": 1024,
+      "height": 576,
+      "snapped_duration_s": 5.166666666666667,
+      "quality": "extra-fast"
+    },
+    {
+      "i": 3,
+      "wall_s": 149.53,
+      "out": "/home/nvidia/generated/game-theory-microcourse/ops/bench/shot-03.mp4",
+      "width": 1024,
+      "height": 576,
+      "snapped_duration_s": 5.166666666666667,
+      "quality": "extra-fast"
+    }
+  ],
+  "baseline": {
+    "resolution": "1344x768",
+    "quality": "extra-fast",
+    "duration_s": 5.167,
+    "mean_intershot_s": {
+      "L1": 290.7,
+      "L2": 287.0,
+      "L3": 305.3,
+      "L4_partial": 298.8
+    },
+    "pooled_mean_s": 294.0,
+    "n_intervals_approx": 53,
+    "source": "mtime deltas of production unique shots 2026-09-09"
+  }
+}

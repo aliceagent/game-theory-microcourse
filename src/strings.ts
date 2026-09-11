@@ -11,6 +11,20 @@ export const strings = {
     loading: 'Loading…',
   },
 
+  catalog: {
+    nav: 'All courses',
+    eyebrow: 'A catalog of lecture courses',
+    statusLive: 'Live',
+    statusInProduction: 'In production',
+    lessonCount: (count: number) => `${count} lessons`,
+    comingSoon: 'Lessons in production',
+    comingSoonBody:
+      'The look, narrator and first lesson are being prepared. Game Theory remains playable at the original addresses.',
+    openCourse: 'Open the course',
+    viewSeries: 'View this series',
+    backToCatalog: 'Back to all courses',
+  },
+
   theme: {
     toLight: 'Switch to light mode',
     toDark: 'Switch to dark mode',

@@ -1,0 +1,48 @@
+{
+  "series": "buffett-florida-1998",
+  "status": "creative_gate_pending",
+  "theme": "engraved-ledger",
+  "narrator": {
+    "provider": "xai",
+    "voice": "leo",
+    "locked_by": "jonathan",
+    "locked_at": "2026-09-11",
+    "note": "Same-line sample reel. Eve remains the Game Theory voice."
+  },
+  "creative_gate": {
+    "status": "awaiting_jonathan",
+    "frames": [
+      {
+        "path": "/home/nvidia/generated/game-theory-microcourse/ops/buffett-florida-1998/gate/01-title-plate-1344.png",
+        "sha256": "44661435fa97f62f72be2fa4bdbc9302610da3eb662686edd0973586aef08306",
+        "width": 1344,
+        "height": 768,
+        "bytes": 1339888
+      },
+      {
+        "path": "/home/nvidia/generated/game-theory-microcourse/ops/buffett-florida-1998/gate/02-classmate-wager-1344.png",
+        "sha256": "74f0a3a8d54613777af253aa67a1d5b11fc0cd65cb6d1746331e3ef4b698b7dd",
+        "width": 1344,
+        "height": 768,
+        "bytes": 2180105
+      },
+      {
+        "path": "/home/nvidia/generated/game-theory-microcourse/ops/buffett-florida-1998/gate/03-castle-moat-1344.png",
+        "sha256": "ebf5b3699ac655db022457240bcbaf3f355d3076c53883b2806a065fe8fb2f38",
+        "width": 1344,
+        "height": 768,
+        "bytes": 2111874
+      },
+      {
+        "path": "/home/nvidia/generated/game-theory-microcourse/ops/buffett-florida-1998/gate/04-share-of-mind-1344.png",
+        "sha256": "08485b3c466de2df280bee373925387168e450b12a3e7dd1e83a8700481ce342",
+        "width": 1344,
+        "height": 768,
+        "bytes": 1318458
+      }
+    ],
+    "presented_at": "2026-09-11T03:57:52.717825+00:00"
+  },
+  "budget_usd_cap": 5.0,
+  "spent_usd": 0.08
+}

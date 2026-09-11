@@ -22,6 +22,9 @@ ops/__pycache__/
 ops/**/__pycache__/
 __pycache__/
 
+# Creative-gate stills stay local until Jonathan locks a look
+ops/buffett-florida-1998/gate/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

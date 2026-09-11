@@ -6,6 +6,8 @@ import { Home } from './routes/Home'
 import { Lesson } from './routes/Lesson'
 import { UnitComplete } from './routes/UnitComplete'
 import { CourseComplete } from './routes/CourseComplete'
+import { Catalog } from './routes/Catalog'
+import { SeriesHome } from './routes/SeriesHome'
 import { NotFound } from './routes/NotFound'
 
 export default function App() {
@@ -19,12 +21,17 @@ export default function App() {
           <Link className="masthead__mark" to="/">
             {course.title}
           </Link>
+          <Link className="masthead__catalog" to="/courses">
+            {strings.catalog.nav}
+          </Link>
           <span className="masthead__meta">{course.subtitle}</span>
           <ThemeToggle />
         </header>
         <main id="content" style={{ paddingBlockStart: 'var(--space-lg)' }}>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/courses" element={<Catalog />} />
+            <Route path="/s/:series" element={<SeriesHome />} />
             <Route path="/lesson/:id" element={<Lesson />} />
             <Route path="/unit/:id/complete" element={<UnitComplete />} />
             <Route path="/complete" element={<CourseComplete />} />

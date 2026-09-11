@@ -299,16 +299,18 @@ try {
   check('home reports the completed lesson', await bodyIncludes(page, '1 of 40 lessons complete'))
   checkEqual('home CTA advances to lesson 2', await textOf(page, '.hero__cta .button--primary'), 'Continue — Lesson 2')
 
-  // --- lesson 40: reachable, honest stub copy ---
+  // --- lesson 40: reachable, shipped film ---
   await gotoRoute(page, '/lesson/40', '.quiz')
   check('lesson 40 renders its title', Boolean(await textOf(page, '.lesson-head h1')))
   checkEqual('lesson 40 renders five questions', await countOf(page, '.question'), 5)
-  check('lesson 40 shows the stub video label', await bodyIncludes(page, 'Video in production'))
   check(
-    'lesson 40 stub copy is honest about what works',
-    await bodyIncludes(page, 'The paper-craft film for this lesson is being made. The full lesson below works now.'),
+    'lesson 40 no longer shows the stub video label',
+    !(await bodyIncludes(page, 'Video in production')),
   )
-  check('lesson 40 shows the placeholder poster', Boolean(await page.$('.video-stage__poster[src*="placeholder-poster.svg"]')))
+  check(
+    'lesson 40 plays the shipped mp4',
+    Boolean(await page.$('video.video-stage__poster source[src*="lesson-40.mp4"]')),
+  )
   check('lesson 40 shows the disclaimer', (await countOf(page, '.disclaimer')) === 1)
   check('lesson 40 shows the source card', (await countOf(page, '.source-card')) === 1)
   checkEqual('lesson 40 has no horizontal overflow at 1440', await overflow(page), 0)

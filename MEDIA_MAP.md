@@ -123,6 +123,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-06-poster.webp` | C5-model cover | 6/45 poster | `approved-pipeline` | `9cf566d94ec332eca05ae6d17be8fbad8db1fbf5be6da7f19853d8308fc55114` |
 | `public/media/buffett-florida-1998/lesson-07.mp4` | Buffett 7/45 conveyor cut | Not a macro guy — Japan | `approved-pipeline` | `7ffddffdf452d8628d223111ecb67f5562508f3c1b3286823a9be01df2a8dedb` |
 | `public/media/buffett-florida-1998/lesson-07-poster.webp` | C5-model cover | 7/45 poster | `approved-pipeline` | `166c8cd50121bc4fe57ca1954411c1a918f6f8c7ab705dd4d744ee844f3349b4` |
+| `public/media/buffett-florida-1998/lesson-08.mp4` | Buffett 8/45 conveyor cut | The cigar-butt approach | `approved-pipeline` | `cf9e60d672f85e5ac2dc7ae38e54d4ae046073df364fe9df33ede04bf1f8581d` |
+| `public/media/buffett-florida-1998/lesson-08-poster.webp` | C5-model cover | 8/45 poster | `approved-pipeline` | `8b208ecc8ce976f4302407362b7bf0328075ade8b332530296236246d92bfb99` |
 
 ## Not yet present
 

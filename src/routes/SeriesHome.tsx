@@ -13,6 +13,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 5, nOf: '5/45', title: 'Qualities you can choose' },
   { id: 6, nOf: '6/45', title: 'You already own a hundred percent' },
   { id: 7, nOf: '7/45', title: 'Not a macro guy — Japan' },
+  { id: 8, nOf: '8/45', title: 'The cigar-butt approach' },
 ]
 
 export function SeriesHome() {

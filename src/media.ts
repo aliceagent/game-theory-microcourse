@@ -18,3 +18,19 @@ export function posterSrc(lessonId: number): string {
   if (!hasVideo(lessonId)) return `${import.meta.env.BASE_URL}media/placeholder-poster.svg`
   return `${import.meta.env.BASE_URL}media/lesson-${String(lessonId).padStart(2, '0')}-poster.webp`
 }
+
+const BUFFETT_WITH_VIDEO = new Set<number>([1, 2, 3, 4, 5, 6, 7])
+
+export function buffettHasVideo(lessonId: number): boolean {
+  return BUFFETT_WITH_VIDEO.has(lessonId)
+}
+
+export function buffettVideoSrc(lessonId: number): string | undefined {
+  if (!buffettHasVideo(lessonId)) return undefined
+  return `${import.meta.env.BASE_URL}media/buffett-florida-1998/lesson-${String(lessonId).padStart(2, '0')}.mp4`
+}
+
+export function buffettPosterSrc(lessonId: number): string {
+  if (!buffettHasVideo(lessonId)) return `${import.meta.env.BASE_URL}media/placeholder-poster.svg`
+  return `${import.meta.env.BASE_URL}media/buffett-florida-1998/lesson-${String(lessonId).padStart(2, '0')}-poster.webp`
+}

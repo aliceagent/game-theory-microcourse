@@ -109,6 +109,20 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/share/course.png` | xAI papercraft still + local title plate; 1200×630 Open Graph / Twitter card | Course social preview | `approved` | `d3055e010ea3957154057cfe6504136e8dcf74874cdebfe71f5f770274e01dd5` |
 | `public/share/course-square.png` | xAI papercraft marshmallows + local title plate; 1080×1080 | Square share card | `approved` | `6ebf4e94cd4a1a0b673582cd073066748e33145e7eae7df5b916f17b3331d8ef` |
 | `public/share/course-story.png` | xAI papercraft still + local title plate; 1080×1920 | Vertical / story share card | `approved` | `2ae108ad88190f0ea0381d25467d4df4bee6cab40ef1163e1e38865bcae606e0` |
+| `public/media/buffett-florida-1998/lesson-01.mp4` | Buffett 1/45 v2 C5 cover; SHA-matched review cut | Throw hardballs lecture film | `approved-pipeline` | `0a763c105f253e3d55fae4686efb7aa4f6c492733030c2a230161e1f7adc96e5` |
+| `public/media/buffett-florida-1998/lesson-01-poster.webp` | C5 cover still | 1/45 poster | `approved-pipeline` | `5db4f8df336f077c403031e27a8f0abb86175f7309c0f016621d4e7c6389fccd` |
+| `public/media/buffett-florida-1998/lesson-02.mp4` | Buffett 2/45 conveyor cut | Integrity, intelligence and energy | `approved-pipeline` | `6b8be09d96105a2631dca8a6ec9fb6e7480ba2f2ac1a8389a21fcf3ec75658c2` |
+| `public/media/buffett-florida-1998/lesson-02-poster.webp` | C5-model cover | 2/45 poster | `approved-pipeline` | `c9c526fb42930724d33272195edff234bd8188d2e088a246b2846680528cf801` |
+| `public/media/buffett-florida-1998/lesson-03.mp4` | Buffett 3/45 conveyor cut | Buy ten percent of a classmate | `approved-pipeline` | `fafb518e4dcbb0718adfd622d47e927bc89be7fdc31ee258615251bc7f0a28b9` |
+| `public/media/buffett-florida-1998/lesson-03-poster.webp` | C5-model cover | 3/45 poster | `approved-pipeline` | `99f9b1b877d3940dd5463000b2c0a408e89247141b67533777372291123bdcff` |
+| `public/media/buffett-florida-1998/lesson-04.mp4` | Buffett 4/45 conveyor cut | Short ten percent — a kicker | `approved-pipeline` | `fcb262a201ee7e71edd2b9b0275cf9edae31fd8f7f8fb462b98a2e029ed6c53c` |
+| `public/media/buffett-florida-1998/lesson-04-poster.webp` | C5-model cover | 4/45 poster | `approved-pipeline` | `e36ff21032d5d4df87f2a5f0b5911114d25bf40ed3ea4da931c07bb55186cfca` |
+| `public/media/buffett-florida-1998/lesson-05.mp4` | Buffett 5/45 conveyor cut | Qualities you can choose | `approved-pipeline` | `3c1213e30d1ae4909ba5f8637fc55c2b6640f4e4140b5223c9751f168968970f` |
+| `public/media/buffett-florida-1998/lesson-05-poster.webp` | C5-model cover | 5/45 poster | `approved-pipeline` | `a065cd5b0b3abd0ced54f169ad367c2794ba671ae5e2a84776fe6899baf79d0c` |
+| `public/media/buffett-florida-1998/lesson-06.mp4` | Buffett 6/45 conveyor cut | You already own a hundred percent | `approved-pipeline` | `0f7cf074edb0a980e4e8fc2038ffff9955a9798c951d30b9b4083a79c34d444a` |
+| `public/media/buffett-florida-1998/lesson-06-poster.webp` | C5-model cover | 6/45 poster | `approved-pipeline` | `9cf566d94ec332eca05ae6d17be8fbad8db1fbf5be6da7f19853d8308fc55114` |
+| `public/media/buffett-florida-1998/lesson-07.mp4` | Buffett 7/45 conveyor cut | Not a macro guy — Japan | `approved-pipeline` | `7ffddffdf452d8628d223111ecb67f5562508f3c1b3286823a9be01df2a8dedb` |
+| `public/media/buffett-florida-1998/lesson-07-poster.webp` | C5-model cover | 7/45 poster | `approved-pipeline` | `166c8cd50121bc4fe57ca1954411c1a918f6f8c7ab705dd4d744ee844f3349b4` |
 
 ## Not yet present
 

@@ -6,6 +6,8 @@ interface VideoStageProps {
   poster: string
   /** Sprint 1 ships placeholders only; real MP4s arrive with the media pipeline. */
   videoSrc?: string
+  /** Game Theory is 16:9; Buffett locked 9:16 768×1344. */
+  aspect?: '16/9' | '9/16'
 }
 
 const SPEED_RATES = [1, 1.25, 1.5, 2] as const
@@ -35,7 +37,7 @@ function formatRate(rate: number): string {
  * Native play/scrub/volume stay. Papercraft speed + fullscreen sit *below* the
  * frame so iOS native controls cannot hide them (Fable 1a).
  */
-export function VideoStage({ poster, videoSrc }: VideoStageProps) {
+export function VideoStage({ poster, videoSrc, aspect = '16/9' }: VideoStageProps) {
   const videoRef = useRef<VideoEl>(null)
   const [rate, setRate] = useState(readStoredRate)
 
@@ -72,7 +74,10 @@ export function VideoStage({ poster, videoSrc }: VideoStageProps) {
 
   return (
     <figure className="video-stage" aria-label={strings.video.stageLabel}>
-      <div className="video-stage__frame">
+      <div
+        className="video-stage__frame"
+        style={aspect === '9/16' ? { aspectRatio: '9 / 16', maxInlineSize: '420px', marginInline: 'auto' } : undefined}
+      >
         {videoSrc ? (
           <video
             ref={videoRef}

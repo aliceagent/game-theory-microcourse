@@ -75,12 +75,16 @@ export const catalog: Catalog = {
       legacy: false,
       basePath: '/s/buffett-florida-1998',
       lessonPath: '/s/buffett-florida-1998/lesson/:id',
-      playlist: null,
+      playlist: {
+        title: 'Buffett at Florida, 1998',
+        id: 'PLFYY34XxGF-M',
+        url: 'https://www.youtube.com/playlist?list=PLFYY34XxGF-M',
+      },
       source: {
         label: 'shared by @HarshBisen143 on X · 51 min cut',
         url: 'https://x.com/HarshBisen143/status/2097897940715200738',
       },
-      lessonCount: 0,
+      lessonCount: 7,
       narrator: { provider: 'xai', voice: 'leo' },
     },
   ],

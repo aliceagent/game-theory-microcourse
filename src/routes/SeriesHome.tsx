@@ -1,7 +1,19 @@
 import { Link, useParams } from 'react-router-dom'
 import { seriesBySlug } from '../content/registry'
 import { strings } from '../strings'
+import { VideoStage } from '../components/VideoStage'
+import { buffettPosterSrc, buffettVideoSrc } from '../media'
 import { NotFound } from './NotFound'
+
+const LESSONS: { id: number; nOf: string; title: string }[] = [
+  { id: 1, nOf: '1/45', title: 'Throw hardballs' },
+  { id: 2, nOf: '2/45', title: 'Integrity, intelligence and energy' },
+  { id: 3, nOf: '3/45', title: 'Buy ten percent of a classmate' },
+  { id: 4, nOf: '4/45', title: 'Short ten percent — a kicker' },
+  { id: 5, nOf: '5/45', title: 'Qualities you can choose' },
+  { id: 6, nOf: '6/45', title: 'You already own a hundred percent' },
+  { id: 7, nOf: '7/45', title: 'Not a macro guy — Japan' },
+]
 
 export function SeriesHome() {
   const slug = useParams().series ?? ''
@@ -9,6 +21,7 @@ export function SeriesHome() {
   if (!series || series.legacy) return <NotFound />
 
   const live = series.status === 'live'
+  const playlist = series.playlist
 
   return (
     <div className="stack">
@@ -18,8 +31,17 @@ export function SeriesHome() {
           <h1>{series.title}</h1>
           <p className="hero__lead">{series.subtitle}</p>
           <p className="meta-line">
-            {live ? strings.catalog.lessonCount(series.lessonCount) : strings.catalog.comingSoonBody}
+            {live
+              ? strings.catalog.lessonCount(series.lessonCount)
+              : `${LESSONS.length} films ready · remaining lessons still rendering`}
           </p>
+          {playlist ? (
+            <p className="meta-line">
+              <a href={playlist.url} rel="noreferrer" target="_blank">
+                YouTube playlist — {playlist.title}
+              </a>
+            </p>
+          ) : null}
           <div className="hero__cta">
             <Link className="button button--secondary" to="/courses">
               {strings.catalog.backToCatalog}
@@ -27,6 +49,20 @@ export function SeriesHome() {
           </div>
         </div>
       </section>
+
+      <ol className="list-reset stack">
+        {LESSONS.map((lesson) => (
+          <li key={lesson.id} className="card">
+            <p className="eyebrow">{lesson.nOf}</p>
+            <h2>{lesson.title}</h2>
+            <VideoStage
+              poster={buffettPosterSrc(lesson.id)}
+              videoSrc={buffettVideoSrc(lesson.id)}
+              aspect="9/16"
+            />
+          </li>
+        ))}
+      </ol>
     </div>
   )
 }

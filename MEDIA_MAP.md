@@ -161,6 +161,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-25-poster.webp` | C5-model cover | 25/45 poster | `approved-pipeline` | `7cce13b0e27c7b2e10128f3cd53ba9a00e94a4fd6945e682409c6ae9500028b5` |
 | `public/media/buffett-florida-1998/lesson-26.mp4` | Buffett 26/45 conveyor cut | See's Candy | `approved-pipeline` | `db8b68831d98577d862a975a40786cb75b0e881a12d74f61062c1027bdb81327` |
 | `public/media/buffett-florida-1998/lesson-26-poster.webp` | C5-model cover | 26/45 poster | `approved-pipeline` | `8de3c0cbf0679f959ecadc33b82b333ba49a4e83e217698eb733a893034c02eb` |
+| `public/media/buffett-florida-1998/lesson-27.mp4` | Buffett 27/45 conveyor cut | See's Candy, getting kissed | `approved-pipeline` | `a04bc1bfa4d33313d723e1903d81d7668a5e59704d070149f594e3b73c376494` |
+| `public/media/buffett-florida-1998/lesson-27-poster.webp` | C5-model cover | 27/45 poster | `approved-pipeline` | `814face63b2dcbcfdc795b5ed9f5f3be03e9e9f516fac25bc86ded1436b93493` |
 
 ## Not yet present
 

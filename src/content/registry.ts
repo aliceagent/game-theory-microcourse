@@ -84,7 +84,7 @@ export const catalog: Catalog = {
         label: 'shared by @HarshBisen143 on X · 51 min cut',
         url: 'https://x.com/HarshBisen143/status/2097897940715200738',
       },
-      lessonCount: 25,
+      lessonCount: 26,
       narrator: { provider: 'xai', voice: 'leo' },
     },
   ],

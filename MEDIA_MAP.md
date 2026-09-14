@@ -159,6 +159,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-24-poster.webp` | C5-model cover | 24/45 poster | `approved-pipeline` | `ecf943b8c05688eca81cf84dc79f4eb74da377f9dc2d820540a9212c00f7eb55` |
 | `public/media/buffett-florida-1998/lesson-25.mp4` | Buffett 25/45 conveyor cut | Not a ticker symbol | `approved-pipeline` | `775d465bbb32d316bb910317c16b841ec0017afe3118f8deaf65456542dc2ae0` |
 | `public/media/buffett-florida-1998/lesson-25-poster.webp` | C5-model cover | 25/45 poster | `approved-pipeline` | `7cce13b0e27c7b2e10128f3cd53ba9a00e94a4fd6945e682409c6ae9500028b5` |
+| `public/media/buffett-florida-1998/lesson-26.mp4` | Buffett 26/45 conveyor cut | See's Candy | `approved-pipeline` | `db8b68831d98577d862a975a40786cb75b0e881a12d74f61062c1027bdb81327` |
+| `public/media/buffett-florida-1998/lesson-26-poster.webp` | C5-model cover | 26/45 poster | `approved-pipeline` | `8de3c0cbf0679f959ecadc33b82b333ba49a4e83e217698eb733a893034c02eb` |
 
 ## Not yet present
 

@@ -22,6 +22,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 14, nOf: '14/45', title: 'You only have to get rich once' },
   { id: 15, nOf: '15/45', title: "Six-sigma won't save you" },
   { id: 16, nOf: '16/45', title: 'I never borrowed money' },
+  { id: 17, nOf: '17/45', title: 'Work in a job you love' },
 ]
 
 export function SeriesHome() {

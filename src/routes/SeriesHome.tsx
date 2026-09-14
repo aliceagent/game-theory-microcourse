@@ -17,6 +17,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 9, nOf: '9/45', title: 'Time is the friend of the wonderful business' },
   { id: 10, nOf: '10/45', title: 'The Alaska phone call' },
   { id: 11, nOf: '11/45', title: 'Sixteen high IQs' },
+  { id: 12, nOf: '12/45', title: 'Leverage and ruin' },
 ]
 
 export function SeriesHome() {

@@ -19,6 +19,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 11, nOf: '11/45', title: 'Sixteen high IQs' },
   { id: 12, nOf: '12/45', title: 'Leverage and ruin' },
   { id: 13, nOf: '13/45', title: 'A thousand chambers' },
+  { id: 14, nOf: '14/45', title: 'You only have to get rich once' },
 ]
 
 export function SeriesHome() {

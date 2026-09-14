@@ -135,6 +135,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-12-poster.webp` | C5-model cover | 12/45 poster | `approved-pipeline` | `323182046bc1bb2c92d23aca2f64a00f129c25adab422e53186bdcf0cd58445a` |
 | `public/media/buffett-florida-1998/lesson-13.mp4` | Buffett 13/45 conveyor cut | A thousand chambers | `approved-pipeline` | `1ad8c2617160b9ef8a6ab29ab7b83f9e06fbb4d484bd3c5f375df63d356a43f6` |
 | `public/media/buffett-florida-1998/lesson-13-poster.webp` | C5-model cover | 13/45 poster | `approved-pipeline` | `70d23f36613d2a501b47b68b31181eba6da2b0d2923eb6d77c13649ec5934516` |
+| `public/media/buffett-florida-1998/lesson-14.mp4` | Buffett 14/45 conveyor cut | You only have to get rich once | `approved-pipeline` | `cf029b89766fad5ed785c43574e65295e48af0e48997c4f85258051efe191054` |
+| `public/media/buffett-florida-1998/lesson-14-poster.webp` | C5-model cover | 14/45 poster | `approved-pipeline` | `310eb10c2e38f8c4d4a77eae9f9d1d24f35fc548b1285a0b888cf52fe7e80bd6` |
 
 ## Not yet present
 

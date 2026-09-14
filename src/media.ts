@@ -19,7 +19,7 @@ export function posterSrc(lessonId: number): string {
   return `${import.meta.env.BASE_URL}media/lesson-${String(lessonId).padStart(2, '0')}-poster.webp`
 }
 
-const BUFFETT_WITH_VIDEO = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18])
+const BUFFETT_WITH_VIDEO = new Set<number>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19])
 
 export function buffettHasVideo(lessonId: number): boolean {
   return BUFFETT_WITH_VIDEO.has(lessonId)

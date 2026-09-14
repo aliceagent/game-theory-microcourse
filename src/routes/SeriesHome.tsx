@@ -28,6 +28,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 20, nOf: '20/45', title: 'A castle with a moat' },
   { id: 21, nOf: '21/45', title: 'Share of mind' },
   { id: 22, nOf: '22/45', title: 'Widen the moat' },
+  { id: 23, nOf: '23/45', title: 'Chewing gum in ten years' },
 ]
 
 export function SeriesHome() {

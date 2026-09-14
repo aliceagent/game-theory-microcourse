@@ -27,6 +27,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 19, nOf: '19/45', title: 'Businesses I can understand' },
   { id: 20, nOf: '20/45', title: 'A castle with a moat' },
   { id: 21, nOf: '21/45', title: 'Share of mind' },
+  { id: 22, nOf: '22/45', title: 'Widen the moat' },
 ]
 
 export function SeriesHome() {

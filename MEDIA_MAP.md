@@ -151,6 +151,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-20-poster.webp` | C5-model cover | 20/45 poster | `approved-pipeline` | `e1c002abe9e191fecf410b412a6d15c6cb2384e5e74aa9d5faffa8e0d4018467` |
 | `public/media/buffett-florida-1998/lesson-21.mp4` | Buffett 21/45 conveyor cut | Share of mind | `approved-pipeline` | `3b814df1045e338f36ff8c75f093202758f4df418d9f475f2cd66c57c923faa7` |
 | `public/media/buffett-florida-1998/lesson-21-poster.webp` | C5-model cover | 21/45 poster | `approved-pipeline` | `c0b54d8687769cc808c60f2618007b5650760442f9dcb052d3515a693d49b2fe` |
+| `public/media/buffett-florida-1998/lesson-22.mp4` | Buffett 22/45 conveyor cut | Widen the moat | `approved-pipeline` | `a571735e653cf89b0050c3f83ea7a80d64156e18eebdc18e75a982955c409cad` |
+| `public/media/buffett-florida-1998/lesson-22-poster.webp` | C5-model cover | 22/45 poster | `approved-pipeline` | `e85f4a35ea9f537134e7109ec9b2f3142fea96e5656de278274608a5e33fd680` |
 
 ## Not yet present
 

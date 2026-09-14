@@ -143,6 +143,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-16-poster.webp` | C5-model cover | 16/45 poster | `approved-pipeline` | `6c464a573518211c7facca797fc5d140f31738a64414266282ab92c52f983f9d` |
 | `public/media/buffett-florida-1998/lesson-17.mp4` | Buffett 17/45 conveyor cut | Work in a job you love | `approved-pipeline` | `68cbc72431d079ba6deecb399faeacbf7912d83b534ce559cee1d8eb4396e35c` |
 | `public/media/buffett-florida-1998/lesson-17-poster.webp` | C5-model cover | 17/45 poster | `approved-pipeline` | `f03591067f659fc322dbd300a9ad5475da3362a93f82c6f3d2a1c7df2adf70b6` |
+| `public/media/buffett-florida-1998/lesson-18.mp4` | Buffett 18/45 conveyor cut | He said I was overpriced | `approved-pipeline` | `0905c809c79d9e780b9d23e4ce549d598a2408b941e377641a981edad9dd96eb` |
+| `public/media/buffett-florida-1998/lesson-18-poster.webp` | C5-model cover | 18/45 poster | `approved-pipeline` | `fb2d8b5d31d32939451b590c80c27b5d24e39d88e34795dcc30773910cd3b0df` |
 
 ## Not yet present
 

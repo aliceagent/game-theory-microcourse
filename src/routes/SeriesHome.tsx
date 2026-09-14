@@ -30,6 +30,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 22, nOf: '22/45', title: 'Widen the moat' },
   { id: 23, nOf: '23/45', title: 'Chewing gum in ten years' },
   { id: 24, nOf: '24/45', title: 'A piece of a business' },
+  { id: 25, nOf: '25/45', title: 'Not a ticker symbol' },
 ]
 
 export function SeriesHome() {

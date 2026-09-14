@@ -173,6 +173,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-31-poster.webp` | C5-model cover | 31/45 poster | `approved-pipeline` | `8edef4f570acf68a4739affc68c52acef05ae887e05603ea1990d97fc448f186` |
 | `public/media/buffett-florida-1998/lesson-32.mp4` | Buffett 32/45 conveyor cut | Five or ten minutes | `approved-pipeline` | `13490a3e612b2fc1091021f276f137271f6ac4d984e754238a41c2075ce88fbf` |
 | `public/media/buffett-florida-1998/lesson-32-poster.webp` | C5-model cover | 32/45 poster | `approved-pipeline` | `92a63ed8d332e3490413656caaa97cc024609c522e4b2444c743234891014dac` |
+| `public/media/buffett-florida-1998/lesson-33.mp4` | Buffett 33/45 conveyor cut | Circle of competence | `approved-pipeline` | `0bf8fd05c12d4e42133bf9aa53755818d6ff76b899ff746d17822656e56bcea2` |
+| `public/media/buffett-florida-1998/lesson-33-poster.webp` | C5-model cover | 33/45 poster | `approved-pipeline` | `a06d958696e7e93d033f4421b4c00ac1b511334131940edb1a86d8f8b3b613d5` |
 
 ## Not yet present
 

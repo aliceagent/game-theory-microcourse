@@ -38,6 +38,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 30, nOf: '30/45', title: "You can't touch it" },
   { id: 31, nOf: '31/45', title: 'If she smiles, the moat widens' },
   { id: 32, nOf: '32/45', title: 'Five or ten minutes' },
+  { id: 33, nOf: '33/45', title: 'Circle of competence' },
 ]
 
 export function SeriesHome() {

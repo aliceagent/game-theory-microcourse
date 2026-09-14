@@ -18,6 +18,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 10, nOf: '10/45', title: 'The Alaska phone call' },
   { id: 11, nOf: '11/45', title: 'Sixteen high IQs' },
   { id: 12, nOf: '12/45', title: 'Leverage and ruin' },
+  { id: 13, nOf: '13/45', title: 'A thousand chambers' },
 ]
 
 export function SeriesHome() {

@@ -133,6 +133,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-11-poster.webp` | C5-model cover | 11/45 poster | `approved-pipeline` | `da482b2a79471f212c1d79fbdc2fb56228e275513ad2713efdb3cb1702294b7d` |
 | `public/media/buffett-florida-1998/lesson-12.mp4` | Buffett 12/45 conveyor cut | Leverage and ruin | `approved-pipeline` | `6c64603c9f600d2cb187951c46b8aa7a20fe699dc5ee61b0f18821e38a5f5902` |
 | `public/media/buffett-florida-1998/lesson-12-poster.webp` | C5-model cover | 12/45 poster | `approved-pipeline` | `323182046bc1bb2c92d23aca2f64a00f129c25adab422e53186bdcf0cd58445a` |
+| `public/media/buffett-florida-1998/lesson-13.mp4` | Buffett 13/45 conveyor cut | A thousand chambers | `approved-pipeline` | `1ad8c2617160b9ef8a6ab29ab7b83f9e06fbb4d484bd3c5f375df63d356a43f6` |
+| `public/media/buffett-florida-1998/lesson-13-poster.webp` | C5-model cover | 13/45 poster | `approved-pipeline` | `70d23f36613d2a501b47b68b31181eba6da2b0d2923eb6d77c13649ec5934516` |
 
 ## Not yet present
 

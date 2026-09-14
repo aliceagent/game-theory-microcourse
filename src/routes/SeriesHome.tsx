@@ -16,6 +16,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 8, nOf: '8/45', title: 'The cigar-butt approach' },
   { id: 9, nOf: '9/45', title: 'Time is the friend of the wonderful business' },
   { id: 10, nOf: '10/45', title: 'The Alaska phone call' },
+  { id: 11, nOf: '11/45', title: 'Sixteen high IQs' },
 ]
 
 export function SeriesHome() {

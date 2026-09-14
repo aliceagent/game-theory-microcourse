@@ -129,6 +129,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-09-poster.webp` | C5-model cover | 9/45 poster | `approved-pipeline` | `4c9afe40228ae1422ca98dd71f4b6d36e86b8ea7320010751690081eb532f8b6` |
 | `public/media/buffett-florida-1998/lesson-10.mp4` | Buffett 10/45 conveyor cut | The Alaska phone call | `approved-pipeline` | `9eaa308630581f1b25bdaefe9b200aa16f0d49b7db0527d4d087425b708a9cb4` |
 | `public/media/buffett-florida-1998/lesson-10-poster.webp` | C5-model cover | 10/45 poster | `approved-pipeline` | `269e043644f894671d05ad61226fc3e4dada434afc64bc9fa4e7ae688d719d05` |
+| `public/media/buffett-florida-1998/lesson-11.mp4` | Buffett 11/45 conveyor cut | Sixteen high IQs | `approved-pipeline` | `ae0253028e76f865a6e781a7f3ee055ccb6737c8ca454546451b8a7e6fce941a` |
+| `public/media/buffett-florida-1998/lesson-11-poster.webp` | C5-model cover | 11/45 poster | `approved-pipeline` | `da482b2a79471f212c1d79fbdc2fb56228e275513ad2713efdb3cb1702294b7d` |
 
 ## Not yet present
 

@@ -155,6 +155,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-22-poster.webp` | C5-model cover | 22/45 poster | `approved-pipeline` | `e85f4a35ea9f537134e7109ec9b2f3142fea96e5656de278274608a5e33fd680` |
 | `public/media/buffett-florida-1998/lesson-23.mp4` | Buffett 23/45 conveyor cut | Chewing gum in ten years | `approved-pipeline` | `d69fcc7e511f3e057b5e7bfced9707e253a5dbeea1ea44fe8c50fe2478d69ec9` |
 | `public/media/buffett-florida-1998/lesson-23-poster.webp` | C5-model cover | 23/45 poster | `approved-pipeline` | `ad93758c6639d28c8c418f21a38326efda0a6890c49b5ee308de2fdd3175db3e` |
+| `public/media/buffett-florida-1998/lesson-24.mp4` | Buffett 24/45 conveyor cut | A piece of a business | `approved-pipeline` | `1f74c20b39a9fe4fe040fbe8c93de380837f2c8ba5f4c54dde10c967d34202fe` |
+| `public/media/buffett-florida-1998/lesson-24-poster.webp` | C5-model cover | 24/45 poster | `approved-pipeline` | `ecf943b8c05688eca81cf84dc79f4eb74da377f9dc2d820540a9212c00f7eb55` |
 
 ## Not yet present
 

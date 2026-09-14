@@ -149,6 +149,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-19-poster.webp` | C5-model cover | 19/45 poster | `approved-pipeline` | `302645a8eb4879b2e47a2a3f51f820b273a4c2943ed140c040d7f2277385ad84` |
 | `public/media/buffett-florida-1998/lesson-20.mp4` | Buffett 20/45 conveyor cut | A castle with a moat | `approved-pipeline` | `f5daa5f9e1f02ad9497c2f835dfa9e65616e8a8e08477c252902037afe723b1b` |
 | `public/media/buffett-florida-1998/lesson-20-poster.webp` | C5-model cover | 20/45 poster | `approved-pipeline` | `e1c002abe9e191fecf410b412a6d15c6cb2384e5e74aa9d5faffa8e0d4018467` |
+| `public/media/buffett-florida-1998/lesson-21.mp4` | Buffett 21/45 conveyor cut | Share of mind | `approved-pipeline` | `3b814df1045e338f36ff8c75f093202758f4df418d9f475f2cd66c57c923faa7` |
+| `public/media/buffett-florida-1998/lesson-21-poster.webp` | C5-model cover | 21/45 poster | `approved-pipeline` | `c0b54d8687769cc808c60f2618007b5650760442f9dcb052d3515a693d49b2fe` |
 
 ## Not yet present
 

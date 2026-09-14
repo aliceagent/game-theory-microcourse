@@ -139,6 +139,8 @@ that ship. `npm run qa:media` (`scripts/check-media.mjs`) enforces it and fails 
 | `public/media/buffett-florida-1998/lesson-14-poster.webp` | C5-model cover | 14/45 poster | `approved-pipeline` | `310eb10c2e38f8c4d4a77eae9f9d1d24f35fc548b1285a0b888cf52fe7e80bd6` |
 | `public/media/buffett-florida-1998/lesson-15.mp4` | Buffett 15/45 conveyor cut | Six-sigma won't save you | `approved-pipeline` | `56c126c082d1176c62de2cc710a57aab069c21fa558cac2a91e4b3374628390d` |
 | `public/media/buffett-florida-1998/lesson-15-poster.webp` | C5-model cover | 15/45 poster | `approved-pipeline` | `f1c5955828801a989b6175c9a854093b505503719525eb14a5a8eddbca276133` |
+| `public/media/buffett-florida-1998/lesson-16.mp4` | Buffett 16/45 conveyor cut | I never borrowed money | `approved-pipeline` | `02b97e6ccbf8f054fc6d2aeaf7289a8c80ecfb0c383a787b1c21e11aa9f1d802` |
+| `public/media/buffett-florida-1998/lesson-16-poster.webp` | C5-model cover | 16/45 poster | `approved-pipeline` | `6c464a573518211c7facca797fc5d140f31738a64414266282ab92c52f983f9d` |
 
 ## Not yet present
 

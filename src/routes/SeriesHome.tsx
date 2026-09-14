@@ -37,6 +37,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 29, nOf: '29/45', title: 'Think of Disney' },
   { id: 30, nOf: '30/45', title: "You can't touch it" },
   { id: 31, nOf: '31/45', title: 'If she smiles, the moat widens' },
+  { id: 32, nOf: '32/45', title: 'Five or ten minutes' },
 ]
 
 export function SeriesHome() {

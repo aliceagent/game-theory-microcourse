@@ -184,14 +184,69 @@ a:hover {
   gap: var(--space-lg);
 }
 
+.catalog-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-sm);
+}
+
 .catalog-card h2 {
   font-size: 1.35rem;
   line-height: 1.2;
-  margin-block: var(--space-sm);
+  margin-block: 0;
 }
 
 .catalog-card h2 a {
   text-decoration: none;
+}
+
+.catalog-card .eyebrow {
+  margin-block-start: var(--space-sm);
+}
+
+.catalog-card__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.meta-mark {
+  inline-size: 1rem;
+  block-size: 1rem;
+  flex: none;
+  color: var(--secondary-deep);
+}
+
+.course-mark {
+  inline-size: 5.5rem;
+  block-size: 5.5rem;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.course-mark svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.course-mark--papercraft {
+  --mark-paper: light-dark(#fff7ee, #24333b);
+  --mark-shadow: light-dark(#e8d4c0, #12181c);
+  --mark-plate: light-dark(#d8cebe, #35464f);
+  --mark-plate-rim: light-dark(#fffdfc, #1e2a31);
+  --mark-cut: light-dark(#f3e0c8, #3a2c28);
+  --mark-puff: light-dark(#fffdfc, #f0eae0);
+}
+
+.course-mark--ledger {
+  --mark-ledger: light-dark(#f3ead7, #1a262c);
+  --mark-hatch: light-dark(#436e67, #8fc0b7);
+  --mark-moat: light-dark(#6b9c94, #2f4550);
+  --mark-stone: light-dark(#e7dcc6, #314047);
+  --mark-keep: light-dark(#24333b, #f0eae0);
+  --mark-door: light-dark(#436e67, #7fb3aa);
 }
 
 @media (min-width: 720px) {

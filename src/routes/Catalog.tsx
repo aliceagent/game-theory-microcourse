@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { CourseMark, LessonCountMark } from '../components/CourseMark'
 import { catalog } from '../content/registry'
 import { strings } from '../strings'
 
@@ -20,6 +21,7 @@ export function Catalog() {
           return (
             <li key={series.slug}>
               <article className="card catalog-card">
+                <CourseMark theme={series.theme} />
                 <p className="eyebrow">
                   {live ? strings.catalog.statusLive : strings.catalog.statusInProduction}
                 </p>
@@ -27,7 +29,8 @@ export function Catalog() {
                   <Link to={to}>{series.title}</Link>
                 </h2>
                 <p>{series.subtitle}</p>
-                <p className="meta-line">
+                <p className="meta-line catalog-card__meta">
+                  <LessonCountMark />
                   {live
                     ? strings.catalog.lessonCount(series.lessonCount)
                     : strings.catalog.comingSoon}

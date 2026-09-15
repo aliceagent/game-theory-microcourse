@@ -47,6 +47,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 39, nOf: '39/45', title: "There's always a reason" },
   { id: 40, nOf: '40/45', title: 'What, not when' },
   { id: 41, nOf: '41/45', title: 'Mistakes of omission' },
+  { id: 42, nOf: '42/45', title: 'An attractive security' },
 ]
 
 export function SeriesHome() {

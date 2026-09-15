@@ -50,6 +50,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 42, nOf: '42/45', title: 'An attractive security' },
   { id: 43, nOf: '43/45', title: 'We never look back' },
   { id: 44, nOf: '44/45', title: 'Important and knowable' },
+  { id: 45, nOf: '45/45', title: 'Zero macro' },
 ]
 
 export function SeriesHome() {

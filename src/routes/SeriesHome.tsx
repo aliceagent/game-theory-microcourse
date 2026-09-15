@@ -43,6 +43,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 35, nOf: '35/45', title: 'I love it' },
   { id: 36, nOf: '36/45', title: 'Six for a quarter' },
   { id: 37, nOf: '37/45', title: 'No taste memory' },
+  { id: 38, nOf: '38/45', title: 'Sixty-four ounces a day' },
 ]
 
 export function SeriesHome() {

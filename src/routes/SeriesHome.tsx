@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { seriesBySlug } from '../content/registry'
 import { strings } from '../strings'
 import { VideoStage } from '../components/VideoStage'
-import { buffettPosterSrc, buffettVideoSrc } from '../media'
+import { buffettPosterSrc, buffettYoutubeId } from '../media'
 import { NotFound } from './NotFound'
 
 const LESSONS: { id: number; nOf: string; title: string }[] = [
@@ -93,7 +93,7 @@ export function SeriesHome() {
             <h2>{lesson.title}</h2>
             <VideoStage
               poster={buffettPosterSrc(lesson.id)}
-              videoSrc={buffettVideoSrc(lesson.id)}
+              youtubeId={buffettYoutubeId(lesson.id)}
               aspect="9/16"
             />
           </li>

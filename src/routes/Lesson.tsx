@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { lessonById, unitById } from '../content/course'
 import type { LessonRecord } from '../lesson'
 import { fetchLesson } from '../lesson'
-import { posterSrc, videoSrc } from '../media'
+import { posterSrc, youtubeId } from '../media'
 import {
   courseStats,
   markLessonComplete,
@@ -146,7 +146,7 @@ function LessonBody({ lesson }: { lesson: LessonRecord }) {
 
       <Disclaimer />
 
-      <VideoStage poster={posterSrc(lesson.id)} videoSrc={videoSrc(lesson.id)} />
+      <VideoStage poster={posterSrc(lesson.id)} youtubeId={youtubeId(lesson.id)} />
 
       <ProgressBar value={resolved} max={total} stateLabel={stateLabel} />
 

@@ -308,8 +308,8 @@ try {
     !(await bodyIncludes(page, 'Video in production')),
   )
   check(
-    'lesson 40 plays the shipped mp4',
-    Boolean(await page.$('video.video-stage__poster source[src*="lesson-40.mp4"]')),
+    'lesson 40 plays the shipped YouTube film',
+    Boolean(await page.$('iframe.video-stage__embed[src*="KdyFeiVKvjE"]')),
   )
   check('lesson 40 shows the disclaimer', (await countOf(page, '.disclaimer')) === 1)
   check('lesson 40 shows the source card', (await countOf(page, '.source-card')) === 1)

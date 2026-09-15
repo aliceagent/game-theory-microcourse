@@ -25,7 +25,7 @@ Record these **separately**. Do not collapse them:
 | Gate | Meaning |
 |---|---|
 | Local QA | hash match to the approved review MP4; plaque QA; 1344×768; unique picture |
-| Site | production `GET /media/lesson-NN.mp4` is `video/mp4` at the expected byte size |
+| Site | production lesson page embeds the YouTube film (`iframe.video-stage__embed`) |
 | Uploaded | YouTube `videos.insert` returned an ID |
 | Processed | `uploadStatus=processed` |
 | Thumbnail | custom thumbnail set, or automatic thumbnail visually accepted |

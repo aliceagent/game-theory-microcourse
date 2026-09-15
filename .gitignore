@@ -39,3 +39,6 @@ ops/buffett-florida-1998/gate/
 # Rejected-size 1024 bench footage (keep JSON evidence only)
 ops/bench/*.mp4
 ops/bench/*.png
+
+# Films are YouTube-hosted; do not ship MP4s to Vercel
+public/**/*.mp4

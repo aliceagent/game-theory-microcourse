@@ -20,6 +20,7 @@ const SHA256 = /^[0-9a-f]{64}$/
 
 /** Files that are never media assets and are not expected in the map. */
 const IGNORED = new Set(['.gitkeep', '.DS_Store'])
+const IGNORED_EXT = new Set(['.mp4'])
 
 async function walk(dir) {
   let entries
@@ -36,7 +37,7 @@ async function walk(dir) {
     const full = path.posix.join(dir, entry.name)
     if (entry.isDirectory()) {
       files.push(...(await walk(full)))
-    } else if (entry.isFile() && !IGNORED.has(entry.name)) {
+    } else if (entry.isFile() && !IGNORED.has(entry.name) && !IGNORED_EXT.has(path.extname(entry.name))) {
       files.push(full)
     }
   }
@@ -62,6 +63,7 @@ function parseRows(markdown) {
     const cells = trimmed.slice(1, trimmed.endsWith('|') ? -1 : undefined).split('|').map((cell) => cell.trim())
     const file = cells[0]?.replace(/^`|`$/g, '')
     if (!file || !TRACKED_DIRS.some((dir) => file.startsWith(`${dir}/`))) return
+    if (file.endsWith('.mp4')) return
 
     const lineNumber = index + 1
     if (cells.length < 5) {

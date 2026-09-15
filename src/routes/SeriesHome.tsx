@@ -46,6 +46,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 38, nOf: '38/45', title: 'Sixty-four ounces a day' },
   { id: 39, nOf: '39/45', title: "There's always a reason" },
   { id: 40, nOf: '40/45', title: 'What, not when' },
+  { id: 41, nOf: '41/45', title: 'Mistakes of omission' },
 ]
 
 export function SeriesHome() {

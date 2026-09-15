@@ -88,6 +88,7 @@ const BUFFETT_YOUTUBE: Record<number, string> = {
   41: 'ezU-EtrH8eU',
   42: 'exsvYn5hLm0',
   43: 'ml-vIjrKm0I',
+  44: 'mllZ-ekQY8Q',
 }
 
 export function hasVideo(lessonId: number): boolean {

@@ -49,6 +49,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 41, nOf: '41/45', title: 'Mistakes of omission' },
   { id: 42, nOf: '42/45', title: 'An attractive security' },
   { id: 43, nOf: '43/45', title: 'We never look back' },
+  { id: 44, nOf: '44/45', title: 'Important and knowable' },
 ]
 
 export function SeriesHome() {

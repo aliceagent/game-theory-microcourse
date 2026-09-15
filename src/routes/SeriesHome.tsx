@@ -41,6 +41,7 @@ const LESSONS: { id: number; nOf: string; title: string }[] = [
   { id: 33, nOf: '33/45', title: 'Circle of competence' },
   { id: 34, nOf: '34/45', title: 'A silver bullet' },
   { id: 35, nOf: '35/45', title: 'I love it' },
+  { id: 36, nOf: '36/45', title: 'Six for a quarter' },
 ]
 
 export function SeriesHome() {
